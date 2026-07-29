@@ -1,0 +1,77 @@
+[project]
+name = "formation-python-senior"
+version = "0.1.0"
+description = "Formation Python senior : Data Analyst, Data Engineer, Data Science, Backend robuste"
+requires-python = ">=3.13"
+
+# ---------------------------------------------------------------------------
+# Ruff : linter + formatter (remplace flake8, isort, pyupgrade, etc.)
+# ---------------------------------------------------------------------------
+[tool.ruff]
+line-length = 100
+target-version = "py313"
+extend-exclude = ["venv", ".venv", "**/migrations"]
+
+[tool.ruff.lint]
+select = [
+    "E",    # pycodestyle erreurs
+    "W",    # pycodestyle warnings
+    "F",    # pyflakes
+    "I",    # isort (tri des imports)
+    "N",    # pep8-naming
+    "UP",   # pyupgrade (syntaxe moderne)
+    "B",    # flake8-bugbear (pièges courants)
+    "C4",   # flake8-comprehensions
+    "SIM",  # flake8-simplify
+    "PTH",  # pathlib plutôt que os.path
+    "RUF",  # règles spécifiques à ruff
+]
+ignore = ["E501"]  # la longueur de ligne est gérée par le formatter
+
+[tool.ruff.lint.per-file-ignores]
+"**/exercices/**" = ["F401", "F841"]  # imports/variables inutilisés tolérés dans les squelettes d'exercices
+
+# ---------------------------------------------------------------------------
+# Black : formatage (utilisé en complément du formatter ruff sur certains modules)
+# ---------------------------------------------------------------------------
+[tool.black]
+line-length = 100
+target-version = ["py313"]
+
+# ---------------------------------------------------------------------------
+# Mypy : vérification statique de types stricte
+# ---------------------------------------------------------------------------
+[tool.mypy]
+python_version = "3.13"
+strict = true
+warn_unused_ignores = true
+warn_return_any = true
+show_error_codes = true
+exclude = ["venv", ".venv", "solutions"]
+
+[[tool.mypy.overrides]]
+module = "exercices.*"
+ignore_errors = true
+
+# ---------------------------------------------------------------------------
+# Pytest
+# ---------------------------------------------------------------------------
+[tool.pytest.ini_options]
+minversion = "8.0"
+addopts = "-ra -q --strict-markers"
+testpaths = ["01_python_senior", "02_data_analyst", "03_data_engineer", "04_data_science", "05_backend", "projects"]
+markers = [
+    "slow: tests lents (désactivés par défaut en dev)",
+    "integration: tests d'intégration nécessitant une ressource externe (DB, réseau)",
+]
+
+# ---------------------------------------------------------------------------
+# Coverage
+# ---------------------------------------------------------------------------
+[tool.coverage.run]
+branch = true
+omit = ["*/venv/*", "*/exercices/*", "*/tests/*"]
+
+[tool.coverage.report]
+show_missing = true
+skip_covered = false

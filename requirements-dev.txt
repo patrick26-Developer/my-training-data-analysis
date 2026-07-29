@@ -1,0 +1,19 @@
+# Outils de développement, qualité et tests (non nécessaires en production)
+# Installation : pip install -r requirements-dev.txt
+
+# Tests
+pytest
+pytest-cov
+pytest-asyncio
+hypothesis
+
+# Qualité de code
+ruff
+black
+mypy
+pre-commit
+types-requests
+types-PyYAML
+
+# Tests de charge
+locust

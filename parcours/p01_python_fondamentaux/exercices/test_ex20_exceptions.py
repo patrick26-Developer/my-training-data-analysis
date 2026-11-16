@@ -2,7 +2,7 @@
 
 import pytest
 from ex20_exceptions import (
-    StockInsuffisant,
+    StockInsuffisantError,
     convertir_entier,
     diviser_sans_erreur,
     premier_entier_valide,
@@ -50,7 +50,7 @@ def test_somme_tolerante():
 
 
 def test_stock_insuffisant():
-    assert issubclass(StockInsuffisant, Exception)
+    assert issubclass(StockInsuffisantError, Exception)
     assert vendre(10, 3) == 7
-    with pytest.raises(StockInsuffisant):
+    with pytest.raises(StockInsuffisantError):
         vendre(2, 5)

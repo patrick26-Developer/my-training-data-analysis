@@ -120,11 +120,11 @@ Lever une exception, c'est dire : « Je ne peux pas faire ce qu'on me demande, e
 ### 3.6 Créer ses propres exceptions
 
 ```python
-class SoldeInsuffisant(Exception):
+class SoldeInsuffisantError(Exception):
     pass
 
 
-raise SoldeInsuffisant("Il manque 4 000 FCFA")
+raise SoldeInsuffisantError("Il manque 4 000 FCFA")
 ```
 
 (Les classes sont étudiées dans le parcours P02 ; retiens seulement cette forme.)

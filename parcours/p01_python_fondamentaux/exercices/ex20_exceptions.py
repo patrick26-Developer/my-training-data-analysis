@@ -48,5 +48,5 @@ def somme_tolerante(textes):
 
 
 # Exercice 7
-# Définis une exception personnalisée `StockInsuffisant` (qui hérite de Exception) et une fonction
-# `vendre(stock, quantite)` qui retourne stock - quantite, ou lève StockInsuffisant si stock < quantite.
+# Définis une exception personnalisée `StockInsuffisantError` (qui hérite de Exception) et une fonction
+# `vendre(stock, quantite)` qui retourne stock - quantite, ou lève StockInsuffisantError si stock < quantite.

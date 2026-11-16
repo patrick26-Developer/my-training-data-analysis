@@ -49,11 +49,11 @@ def somme_tolerante(textes: list[str]) -> float:
     return total
 
 
-class StockInsuffisant(Exception):
+class StockInsuffisantError(Exception):
     """Levée quand on veut vendre plus que le stock disponible."""
 
 
 def vendre(stock: int, quantite: int) -> int:
     if stock < quantite:
-        raise StockInsuffisant(f"Stock {stock} < demande {quantite}")
+        raise StockInsuffisantError(f"Stock {stock} < demande {quantite}")
     return stock - quantite

@@ -1,4 +1,4 @@
-"""Tests des solutions 1.1. Copie des tests d'exercice appliquée aux solutions."""
+"""Tests des solutions 1.1. Généré par outils/sync_tests_solutions.py."""
 
 from sol01_premiers_pas import (
     afficher_adresse,

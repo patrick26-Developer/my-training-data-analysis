@@ -1,4 +1,4 @@
-"""Tests des solutions 1.2. Copie des tests d'exercice appliquée aux solutions."""
+"""Tests des solutions 1.2. Généré par outils/sync_tests_solutions.py."""
 
 import pytest
 from sol02_variables_et_nombres import (

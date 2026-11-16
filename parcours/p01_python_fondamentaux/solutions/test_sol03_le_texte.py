@@ -1,4 +1,4 @@
-"""Tests des solutions 1.3. Copie des tests d'exercice appliquée aux solutions."""
+"""Tests des solutions 1.3. Généré par outils/sync_tests_solutions.py."""
 
 from sol03_le_texte import (
     code_ville,

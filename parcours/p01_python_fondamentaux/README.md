@@ -10,8 +10,8 @@ et organises ton code en fonctions et modules.
 
 | Module | Titre | Leçons | Statut |
 |---|---|---|---|
-| M1 | Premiers pas | 1.1 Premier programme · 1.2 Variables et nombres · 1.3 Le texte · 1.4 Entrées et sorties | 🚧 1.1 et 1.2 disponibles |
-| M2 | Prendre des décisions | 2.1 Booléens et comparaisons · 2.2 `if / elif / else` · 2.3 `match` | ⏳ |
+| M1 | Premiers pas | 1.1 Premier programme · 1.2 Variables et nombres · 1.3 Le texte · 1.4 Entrées et sorties | ✅ terminé |
+| M2 | Prendre des décisions | 2.1 Booléens et comparaisons · 2.2 `if / elif / else` · 2.3 `match` | ✅ leçons terminées (mini-projet à venir) |
 | M3 | Répéter | 3.1 `while` · 3.2 `for` et `range` · 3.3 `break`, `continue`, boucles imbriquées | ⏳ |
 | M4 | Les collections | 4.1 Listes · 4.2 Tuples · 4.3 Dictionnaires · 4.4 Ensembles · 4.5 Compréhensions | ⏳ |
 | M5 | Les fonctions | 5.1 Définir et appeler · 5.2 Paramètres et valeurs par défaut · 5.3 Portée · 5.4 Fonctions comme valeurs | ⏳ |

@@ -1,4 +1,4 @@
-"""Tests des solutions 1.4. Copie des tests d'exercice appliquée aux solutions."""
+"""Tests des solutions 1.4. Généré par outils/sync_tests_solutions.py."""
 
 import pytest
 from sol04_entrees_et_sorties import (

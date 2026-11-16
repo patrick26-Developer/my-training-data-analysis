@@ -15,7 +15,7 @@ et organises ton code en fonctions et modules.
 | M3 | Répéter | 3.1 `while` · 3.2 `for` et `range` · 3.3 `break`, `continue`, boucles imbriquées | ✅ terminé |
 | M4 | Les collections | 4.1 Listes · 4.2 Tuples · 4.3 Dictionnaires · 4.4 Ensembles · 4.5 Compréhensions · mini-projet gestionnaire de stock | ✅ terminé |
 | M5 | Les fonctions | 5.1 Définir et appeler · 5.2 Paramètres et valeurs par défaut · 5.3 Portée · 5.4 Fonctions comme valeurs · mini-projet caisse en fonctions | ✅ terminé |
-| M6 | Fichiers et erreurs | 6.1 Lire/écrire des fichiers · 6.2 CSV et JSON · 6.3 Exceptions · 6.4 `pathlib` | ⏳ |
+| M6 | Erreurs et fichiers | 6.1 Exceptions · 6.2 Lire/écrire des fichiers · 6.3 CSV et JSON · 6.4 `pathlib` · mini-projet carnet d'adresses | ✅ terminé |
 | M7 | Modules et environnement | 7.1 Importer · 7.2 Bibliothèque standard · 7.3 `venv` et `pip` · 7.4 Écrire ses modules | ⏳ |
 | M8 | Maths et algorithmique | 8.1 Module `math` et formules (aire, intérêts, pourcentages) · 8.2 `statistics`, `random`, `decimal`, `fractions` · 8.3 Tableaux à 2 dimensions (listes de listes, matrices) · 8.4 Algorithmes classiques (recherche, tri, suite de Fibonacci, nombres premiers) | ⏳ |
 | M9 | Premiers graphiques | 9.1 Dessiner avec `turtle` · 9.2 Courbes et histogrammes avec `matplotlib` · 9.3 Représenter une fonction mathématique · 9.4 Graphique des ventes d'une boutique | ⏳ |

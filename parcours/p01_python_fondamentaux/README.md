@@ -13,7 +13,7 @@ et organises ton code en fonctions et modules.
 | M1 | Premiers pas | 1.1 Premier programme · 1.2 Variables et nombres · 1.3 Le texte · 1.4 Entrées et sorties | ✅ terminé |
 | M2 | Prendre des décisions | 2.1 Booléens et comparaisons · 2.2 `if / elif / else` · 2.3 `match` | ✅ terminé |
 | M3 | Répéter | 3.1 `while` · 3.2 `for` et `range` · 3.3 `break`, `continue`, boucles imbriquées | ✅ terminé |
-| M4 | Les collections | 4.1 Listes · 4.2 Tuples · 4.3 Dictionnaires · 4.4 Ensembles · 4.5 Compréhensions | ⏳ |
+| M4 | Les collections | 4.1 Listes · 4.2 Tuples · 4.3 Dictionnaires · 4.4 Ensembles · 4.5 Compréhensions · mini-projet gestionnaire de stock | ✅ terminé |
 | M5 | Les fonctions | 5.1 Définir et appeler · 5.2 Paramètres et valeurs par défaut · 5.3 Portée · 5.4 Fonctions comme valeurs | ⏳ |
 | M6 | Fichiers et erreurs | 6.1 Lire/écrire des fichiers · 6.2 CSV et JSON · 6.3 Exceptions · 6.4 `pathlib` | ⏳ |
 | M7 | Modules et environnement | 7.1 Importer · 7.2 Bibliothèque standard · 7.3 `venv` et `pip` · 7.4 Écrire ses modules | ⏳ |

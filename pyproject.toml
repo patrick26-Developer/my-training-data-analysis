@@ -48,7 +48,8 @@ strict = true
 warn_unused_ignores = true
 warn_return_any = true
 show_error_codes = true
-exclude = ["venv", ".venv", "solutions"]
+# Le typage est enseigné en P03 : mypy ne vérifie pas les parcours débutants (P01, P02).
+exclude = ["venv", ".venv", "solutions", "parcours/p01_python_fondamentaux", "parcours/p02_poo_et_conception"]
 
 [[tool.mypy.overrides]]
 module = "exercices.*"

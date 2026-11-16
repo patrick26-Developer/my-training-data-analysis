@@ -1,0 +1,67 @@
+# Dépendances DIRECTES de Mayele Python Académie (sans versions figées).
+# Les versions exactes résolues sont figées dans requirements.txt.
+# Mise à jour : pip install -U -r requirements.in  puis  pip freeze > requirements.txt
+
+# Backend & API (P06)
+Django
+djangorestframework
+fastapi[standard]
+Flask
+flask-cors
+Flask-Login
+uvicorn
+httpx
+requests
+pydantic
+pydantic-settings
+python-dotenv
+python-multipart
+celery
+redis
+SQLAlchemy
+alembic
+psycopg2-binary
+mysqlclient
+argon2-cffi
+bcrypt
+cryptography
+PyJWT
+sentry-sdk
+
+# Data analysis / engineering / science (P08-P10)
+numpy
+pandas
+polars
+pyarrow
+duckdb
+scipy
+statsmodels
+scikit-learn
+xgboost
+lightgbm
+matplotlib
+seaborn
+plotly
+missingno
+openpyxl
+beautifulsoup4
+tqdm
+joblib
+
+# Deep learning (P10)
+torch
+torchvision
+torchaudio
+tensorflow
+keras
+tensorboard
+
+# Interfaces, notebooks, outils (P04, P01+)
+rich
+typer
+jupyterlab
+notebook
+ipykernel
+PyYAML
+Markdown
+locust

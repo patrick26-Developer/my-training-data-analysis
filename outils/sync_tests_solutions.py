@@ -18,6 +18,7 @@ def main() -> None:
         contenu = test_ex.read_text(encoding="utf-8")
         suffixe = test_ex.stem.removeprefix("test_ex")
         contenu = contenu.replace(f"from ex{suffixe} import", f"from sol{suffixe} import")
+        contenu = contenu.replace(f"import ex{suffixe} as", f"import sol{suffixe} as")
         contenu = contenu.replace("Tests de l'exercice", "Tests des solutions")
         contenu = contenu.replace(
             "Ne modifie pas ce fichier", "Généré par outils/sync_tests_solutions.py"

@@ -30,6 +30,7 @@ ignore = ["E501"]  # la longueur de ligne est gérée par le formatter
 
 [tool.ruff.lint.per-file-ignores]
 "**/solutions/**" = ["SIM110", "SIM108", "SIM103"]  # boucles et if explicites : choix pédagogique
+"**/solutions/test_sol*.py" = ["I001"]  # fichiers générés par outils/sync_tests_solutions.py
 "**/exercices/**" = ["F401", "F841"]  # imports/variables inutilisés tolérés dans les squelettes d'exercices
 
 # ---------------------------------------------------------------------------

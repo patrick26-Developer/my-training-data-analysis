@@ -1,7 +1,7 @@
 [project]
-name = "formation-python-senior"
+name = "mayele-python-academie"
 version = "0.1.0"
-description = "Formation Python senior : Data Analyst, Data Engineer, Data Science, Backend robuste"
+description = "Mayele Python Académie : formation complète à Python, des bases à l'expertise (Congo-Brazzaville)"
 requires-python = ">=3.13"
 
 # ---------------------------------------------------------------------------
@@ -58,8 +58,11 @@ ignore_errors = true
 # ---------------------------------------------------------------------------
 [tool.pytest.ini_options]
 minversion = "8.0"
+asyncio_default_fixture_loop_scope = "function"
 addopts = "-ra -q --strict-markers"
-testpaths = ["01_python_senior", "02_data_analyst", "03_data_engineer", "04_data_science", "05_backend", "projects"]
+# Par défaut on teste les SOLUTIONS (elles doivent toujours être vertes).
+# Les exercices sont lancés explicitement par l'apprenant : pytest parcours/<parcours>/exercices/test_exNN_x.py
+testpaths = ["parcours/*/solutions", "parcours/*/projets"]
 markers = [
     "slow: tests lents (désactivés par défaut en dev)",
     "integration: tests d'intégration nécessitant une ressource externe (DB, réseau)",

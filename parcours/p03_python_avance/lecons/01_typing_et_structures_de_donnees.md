@@ -1,4 +1,4 @@
-# 1.1 — Typing avancé & structures de données
+# 3.1 — Typing avancé & structures de données
 
 ## Pourquoi typer son code Python
 
@@ -15,6 +15,7 @@ Dans ce projet, `pyproject.toml` configure déjà `mypy` en mode `strict`.
 
 ```python
 from dataclasses import dataclass, field
+
 
 @dataclass(frozen=True, slots=True)
 class Point3D:
@@ -46,10 +47,12 @@ quelques méthodes utilitaires.
 ```python
 from typing import NamedTuple, TypedDict
 
+
 class RGB(NamedTuple):
     r: int
     g: int
     b: int
+
 
 class UserPayload(TypedDict):
     id: int
@@ -66,8 +69,10 @@ donnée sous forme d'objets.
 ```python
 from typing import Protocol
 
+
 class Comparable(Protocol):
     def __lt__(self, other: object) -> bool: ...
+
 
 def plus_petit[T: Comparable](a: T, b: T) -> T:
     return a if a < b else b
@@ -107,7 +112,9 @@ from typing import Literal, Final, overload
 
 MAX_RETRIES: Final = 3
 
+
 def set_mode(mode: Literal["read", "write", "append"]) -> None: ...
+
 
 @overload
 def process(value: int) -> str: ...

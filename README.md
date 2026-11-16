@@ -1,62 +1,64 @@
-# Formation Python Senior — Data & Backend
+# Mayele Python Académie
 
-Formation complète et pratique pour atteindre un niveau **senior** en Python sur quatre axes :
-Data Analyst, Data Engineer, Data Scientist, et développement Backend robuste/sécurisé.
+> *Mayele* (lingala) : le savoir, l'intelligence, la débrouillardise.
 
-Le programme détaillé est dans [`CURRICULUM.md`](./CURRICULUM.md).
+Plateforme de formation complète à Python, **du premier `print()` jusqu'à l'expertise sénior**,
+pensée pour les apprenants du **Congo-Brazzaville** et de l'Afrique francophone.
+Organisation inspirée du système **LMD** (Licence – Master – Doctorat).
 
-## Démarrage rapide
+## Où en est-on ?
 
-```powershell
-# Activer l'environnement virtuel
-.\venv\Scripts\Activate.ps1
+| Parcours | Statut |
+|---|---|
+| P01 Python Fondamentaux | 🚧 en rédaction (module 1 en cours) |
+| P03 Python Avancé | 🟡 1 leçon disponible (sera complété après P01 et P02) |
+| Autres parcours | ⏳ planifiés, voir [`docs/CURSUS.md`](docs/CURSUS.md) |
 
-# Installer/mettre à jour les dépendances
-pip install -r requirements.txt
-pip install -r requirements-dev.txt
+Principe : **un parcours est terminé complètement avant d'ouvrir le suivant.**
 
-# Vérifier que tout fonctionne
-pytest --version
-ruff --version
-mypy --version
-```
+## Documentation
+
+- [`docs/CURSUS.md`](docs/CURSUS.md) — les 12 parcours, le LMD, les crédits et les certificats
+- [`docs/MODELE_DE_LECON.md`](docs/MODELE_DE_LECON.md) — la structure commune à toutes les leçons
+- [`docs/PLATEFORME.md`](docs/PLATEFORME.md) — architecture du futur site web et feuille de route
 
 ## Arborescence
 
 ```
 .
-├── 00_setup/            Vérifications d'environnement, prise en main des outils
-├── 01_python_senior/    Fondations avancées du langage (typing, OOP, async, perf, tests)
-├── 02_data_analyst/     Pandas/Polars, SQL, visualisation, reporting
-├── 03_data_engineer/    Pipelines ETL/ELT, bases de données, orchestration, formats de données
-├── 04_data_science/     Statistiques, machine learning, évaluation de modèles
-├── 05_backend/          FastAPI/Django, architecture, sécurité, tests, déploiement
-└── projects/            Projets fil rouge combinant plusieurs axes
+├── docs/                          Documentation du projet
+└── parcours/
+    ├── p01_python_fondamentaux/
+    ├── p03_python_avance/
+    └── pNN_.../                   (créés au fur et à mesure)
+        ├── README.md              Plan du parcours
+        ├── lecons/                Cours en Markdown
+        ├── exercices/             Exercices à compléter + tests
+        ├── solutions/             Corrigés commentés + tests
+        └── projets/               Mini-projets et projet de synthèse
 ```
 
-Chaque module `NN_xxx/` suit la même structure :
+## Démarrage rapide (Windows / PowerShell)
 
-```
-NN_module/
-├── README.md       Objectifs du module et plan des leçons
-├── lecons/          Théorie concise (fichiers Markdown numérotés)
-├── exercices/        Katas et exercices à trous (squelettes de code)
-├── solutions/         Corrections commentées des exercices
-└── projet/            Mini-projet réel de fin de module
+```powershell
+python -m venv venv
+.\venv\Scripts\Activate.ps1
+pip install -r requirements.txt
+pip install -r requirements-dev.txt
 ```
 
-## Méthode de travail
+Tester **les solutions** (toujours vertes) :
 
-1. Lire la leçon théorique correspondante dans `lecons/`.
-2. Faire les exercices dans `exercices/` sans regarder `solutions/`.
-3. Comparer avec la solution, comprendre les écarts.
-4. Réaliser le mini-projet du module dans `projet/`.
-5. Lancer `pytest`, `ruff check`, `mypy` sur son propre code avant de passer au module suivant.
+```powershell
+pytest
+```
 
-## Qualité de code — à respecter dès le premier exercice
+Faire **un exercice** (rouge au début, vert quand tu as réussi) :
 
-- **Type hints partout** (`mypy --strict` doit passer sans erreur en dehors de `exercices/`).
-- **Tests** pour toute fonction non triviale (`pytest`, viser une couverture significative).
-- **Formatage automatique** : `ruff format .` avant chaque commit.
-- **Lint** : `ruff check .` doit être propre.
-- Committer régulièrement (un commit par exercice/module terminé) pour suivre la progression.
+```powershell
+pytest parcours/p01_python_fondamentaux/exercices/test_ex01_premiers_pas.py -v
+```
+
+## Qualité de code
+
+`ruff check .`, `ruff format .`, `mypy` et `pytest` doivent passer avant chaque commit.

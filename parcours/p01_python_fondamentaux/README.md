@@ -17,7 +17,7 @@ et organises ton code en fonctions et modules.
 | M5 | Les fonctions | 5.1 Définir et appeler · 5.2 Paramètres et valeurs par défaut · 5.3 Portée · 5.4 Fonctions comme valeurs · mini-projet caisse en fonctions | ✅ terminé |
 | M6 | Erreurs et fichiers | 6.1 Exceptions · 6.2 Lire/écrire des fichiers · 6.3 CSV et JSON · 6.4 `pathlib` · mini-projet carnet d'adresses | ✅ terminé |
 | M7 | Modules et environnement | 7.1 Importer · 7.2 Bibliothèque standard · 7.3 `venv` et `pip` · 7.4 Écrire ses modules · mini-projet boîte à outils | ✅ terminé |
-| M8 | Maths et algorithmique | 8.1 Module `math` et formules (aire, intérêts, pourcentages) · 8.2 `statistics`, `random`, `decimal`, `fractions` · 8.3 Tableaux à 2 dimensions (listes de listes, matrices) · 8.4 Algorithmes classiques (recherche, tri, suite de Fibonacci, nombres premiers) | ⏳ |
+| M8 | Maths et algorithmique | 8.1 Module `math` et formules (aire, intérêts, pourcentages) · 8.2 `statistics`, `random`, `decimal`, `fractions` · 8.3 Tableaux à 2 dimensions (listes de listes, matrices) · 8.4 Algorithmes classiques (recherche, tri, suite de Fibonacci, nombres premiers) | ✅ terminé |
 | M9 | Premiers graphiques | 9.1 Dessiner avec `turtle` · 9.2 Courbes et histogrammes avec `matplotlib` · 9.3 Représenter une fonction mathématique · 9.4 Graphique des ventes d'une boutique | ⏳ |
 | M10 | Écrire du bon code | 10.1 Déboguer · 10.2 Premiers tests · 10.3 Style PEP 8 · 10.4 Documenter | ⏳ |
 | M11 | Projets | Mini-projets de chaque module + **projet de synthèse : gestion de boutique en console** | ⏳ |

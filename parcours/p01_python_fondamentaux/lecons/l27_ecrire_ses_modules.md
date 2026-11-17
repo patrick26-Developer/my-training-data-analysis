@@ -2,6 +2,10 @@
 
 ⏱ 50 min · 🎯 Intermédiaire · 📦 Prérequis : leçons 7.1 à 7.3
 
+<!-- cadre:debut -->
+> 🔥 **Pourquoi tu vas aimer cette leçon** — Ton programme devient trop gros ? Tu vas apprendre à le découper en modules et en packages bien organisés.
+<!-- /cadre:debut -->
+
 ## 🎯 Ce que tu sauras faire
 
 - Découper un programme en plusieurs fichiers
@@ -183,3 +187,15 @@ Une version de référence est dans [`../projets/m7_boite_a_outils/`](../projets
 4. `python -m boutique.main`, depuis la racine du projet.
 
 </details>
+
+<!-- cadre:fin -->
+---
+
+## 🎉 Bravo !
+
+Le module 7 est terminé. Ton code est désormais organisé comme celui d'une vraie application.
+
+💬 *Bloqué(e) ? C'est normal et ça fait partie de l'apprentissage. Relis la section « Pièges courants », refais l'exemple en le tapant toi-même, puis demande de l'aide dans la communauté.*
+
+**Prochaine étape :** [Leçon 8.1 — Le module `math` et les formules](l28_maths_et_formules.md).
+<!-- /cadre:fin -->

@@ -2,6 +2,10 @@
 
 ⏱ 45 min · 🎯 Intermédiaire · 📦 Prérequis : modules 1 à 7
 
+<!-- cadre:debut -->
+> 🔥 **Pourquoi tu vas aimer cette leçon** — Du code lisible, c'est du code que l'on a envie de lire : tu vas découvrir les conventions des professionnels.
+<!-- /cadre:debut -->
+
 ## 🎯 Ce que tu sauras faire
 
 - Écrire du code **lisible** selon les conventions Python (PEP 8)
@@ -200,3 +204,15 @@ pytest parcours/p01_python_fondamentaux/exercices/test_ex38_style_pep8.py -v
 4. Une valeur numérique écrite telle quelle dans le code, sans nom qui explique son rôle.
 
 </details>
+
+<!-- cadre:fin -->
+---
+
+## 🎉 Bravo !
+
+Ton code a désormais l'allure d'un code professionnel. Les outils font le gros du travail pour toi.
+
+💬 *Bloqué(e) ? C'est normal et ça fait partie de l'apprentissage. Relis la section « Pièges courants », refais l'exemple en le tapant toi-même, puis demande de l'aide dans la communauté.*
+
+**Prochaine étape :** [Leçon 10.4 — Documenter son code](l39_documenter.md).
+<!-- /cadre:fin -->

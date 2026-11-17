@@ -1,0 +1,350 @@
+{
+  "devise": "XAF",
+  "duree_acces_mois": 12,
+  "avertissement": "Prix de départ à valider par l'auteur avant toute mise en vente.",
+  "publics": {
+    "particulier": {
+      "libelle": "Particulier",
+      "coefficient": 1.0,
+      "justificatif": "aucun",
+      "description": "Toute personne qui apprend pour elle-même."
+    },
+    "eleve": {
+      "libelle": "Élève (collège, lycée)",
+      "coefficient": 0.4,
+      "justificatif": "carte scolaire ou attestation de scolarité de l'année en cours",
+      "description": "Tarif très réduit pour les élèves."
+    },
+    "etudiant": {
+      "libelle": "Étudiant",
+      "coefficient": 0.6,
+      "justificatif": "carte d'étudiant ou certificat d'inscription de l'année en cours",
+      "description": "Tarif étudiant (université, institut, centre de formation)."
+    },
+    "enseignant": {
+      "libelle": "Enseignant",
+      "coefficient": 0.6,
+      "justificatif": "attestation de l'établissement ou carte professionnelle",
+      "description": "Pour préparer ses propres cours. Accès personnel."
+    },
+    "formateur": {
+      "libelle": "Formateur indépendant",
+      "coefficient": 0.8,
+      "justificatif": "déclaration d'activité ou pièce d'identité professionnelle",
+      "description": "Accès personnel pour se former et préparer ses séances. Ne donne pas le droit de revendre le contenu."
+    },
+    "demandeur_emploi": {
+      "libelle": "Demandeur d'emploi / reconversion",
+      "coefficient": 0.5,
+      "justificatif": "attestation d'inscription ou déclaration sur l'honneur",
+      "description": "Soutien à la reconversion professionnelle."
+    }
+  },
+  "parcours": [
+    {
+      "id": "p01",
+      "dossier": "p01_python_fondamentaux",
+      "titre": "P01 — Python Fondamentaux",
+      "titre_court": "Python Fondamentaux",
+      "statut": "disponible",
+      "niveau": "débutant complet",
+      "credits": 30,
+      "promesse": "Écris tes premiers vrais programmes et construis une application de boutique complète.",
+      "pour_qui": "Débutant complet, aucun prérequis.",
+      "modules": 11,
+      "lecons": 40,
+      "exercices": 40,
+      "duree_estimee_heures": 35.0,
+      "apercu_gratuit": [
+        "l01",
+        "l02",
+        "l03",
+        "l04"
+      ],
+      "prix_base": 12000,
+      "prix": {
+        "particulier": 12000,
+        "eleve": 5000,
+        "etudiant": 7000,
+        "enseignant": 7000,
+        "formateur": 9500,
+        "demandeur_emploi": 6000
+      },
+      "prix_eur_indicatif": {
+        "particulier": 18.29,
+        "eleve": 7.62,
+        "etudiant": 10.67,
+        "enseignant": 10.67,
+        "formateur": 14.48,
+        "demandeur_emploi": 9.15
+      }
+    },
+    {
+      "id": "p02",
+      "dossier": "p02_poo_et_conception",
+      "titre": "P02 — POO et conception",
+      "titre_court": "POO et conception",
+      "statut": "disponible",
+      "niveau": "",
+      "credits": null,
+      "promesse": "Organise ton code en objets et fais évoluer ton projet sans le casser.",
+      "pour_qui": "Toute personne ayant terminé P01 ou connaissant les bases (fonctions, fichiers, exceptions).",
+      "modules": 0,
+      "lecons": 6,
+      "exercices": 6,
+      "duree_estimee_heures": null,
+      "apercu_gratuit": [
+        "l01"
+      ],
+      "prix_base": 15000,
+      "prix": {
+        "particulier": 15000,
+        "eleve": 6000,
+        "etudiant": 9000,
+        "enseignant": 9000,
+        "formateur": 12000,
+        "demandeur_emploi": 7500
+      },
+      "prix_eur_indicatif": {
+        "particulier": 22.87,
+        "eleve": 9.15,
+        "etudiant": 13.72,
+        "enseignant": 13.72,
+        "formateur": 18.29,
+        "demandeur_emploi": 11.43
+      }
+    },
+    {
+      "id": "p03",
+      "dossier": "p03_python_avance",
+      "titre": "P03 — Python Avancé",
+      "titre_court": "Python Avancé",
+      "statut": "bientot",
+      "niveau": "",
+      "credits": null,
+      "promesse": "Écris du Python typé, rapide, testé et prêt pour la production.",
+      "pour_qui": "Personnes ayant terminé P01 et P02.",
+      "modules": 0,
+      "lecons": 1,
+      "exercices": 1,
+      "duree_estimee_heures": null,
+      "apercu_gratuit": [
+        "01_typing_et_structures_de_donnees"
+      ],
+      "prix_base": 20000,
+      "prix": {
+        "particulier": 20000,
+        "eleve": 8000,
+        "etudiant": 12000,
+        "enseignant": 12000,
+        "formateur": 16000,
+        "demandeur_emploi": 10000
+      },
+      "prix_eur_indicatif": {
+        "particulier": 30.49,
+        "eleve": 12.2,
+        "etudiant": 18.29,
+        "enseignant": 18.29,
+        "formateur": 24.39,
+        "demandeur_emploi": 15.24
+      }
+    }
+  ],
+  "licences": {
+    "entreprise": {
+      "libelle": "Entreprise / équipe",
+      "minimum_places": 3,
+      "justificatif": "raison sociale + NIU/RCCM, facture sur demande",
+      "paliers": [
+        {
+          "a_partir_de": 3,
+          "remise": 0.0
+        },
+        {
+          "a_partir_de": 10,
+          "remise": 0.1
+        },
+        {
+          "a_partir_de": 25,
+          "remise": 0.2
+        },
+        {
+          "a_partir_de": 50,
+          "remise": 0.3
+        }
+      ],
+      "prix_par_place": {
+        "p01": [
+          {
+            "a_partir_de": 3,
+            "prix": 18000
+          },
+          {
+            "a_partir_de": 10,
+            "prix": 16000
+          },
+          {
+            "a_partir_de": 25,
+            "prix": 14500
+          },
+          {
+            "a_partir_de": 50,
+            "prix": 12500
+          }
+        ],
+        "p02": [
+          {
+            "a_partir_de": 3,
+            "prix": 22500
+          },
+          {
+            "a_partir_de": 10,
+            "prix": 20000
+          },
+          {
+            "a_partir_de": 25,
+            "prix": 18000
+          },
+          {
+            "a_partir_de": 50,
+            "prix": 15500
+          }
+        ],
+        "p03": [
+          {
+            "a_partir_de": 3,
+            "prix": 30000
+          },
+          {
+            "a_partir_de": 10,
+            "prix": 27000
+          },
+          {
+            "a_partir_de": 25,
+            "prix": 24000
+          },
+          {
+            "a_partir_de": 50,
+            "prix": 21000
+          }
+        ]
+      }
+    },
+    "etablissement": {
+      "libelle": "École / université / centre de formation",
+      "minimum_places": 20,
+      "justificatif": "convention ou bon de commande de l'établissement",
+      "paliers": [
+        {
+          "a_partir_de": 20,
+          "remise": 0.0
+        },
+        {
+          "a_partir_de": 50,
+          "remise": 0.1
+        },
+        {
+          "a_partir_de": 100,
+          "remise": 0.2
+        }
+      ],
+      "prix_par_place": {
+        "p01": [
+          {
+            "a_partir_de": 20,
+            "prix": 4000
+          },
+          {
+            "a_partir_de": 50,
+            "prix": 4000
+          },
+          {
+            "a_partir_de": 100,
+            "prix": 3500
+          }
+        ],
+        "p02": [
+          {
+            "a_partir_de": 20,
+            "prix": 5000
+          },
+          {
+            "a_partir_de": 50,
+            "prix": 4500
+          },
+          {
+            "a_partir_de": 100,
+            "prix": 4000
+          }
+        ],
+        "p03": [
+          {
+            "a_partir_de": 20,
+            "prix": 7000
+          },
+          {
+            "a_partir_de": 50,
+            "prix": 6500
+          },
+          {
+            "a_partir_de": 100,
+            "prix": 5500
+          }
+        ]
+      }
+    }
+  },
+  "packs": [
+    {
+      "id": "licence-1",
+      "libelle": "Pack Licence 1 : bases solides",
+      "parcours": [
+        "p01",
+        "p02"
+      ],
+      "remise": 0.15,
+      "prix": {
+        "particulier": 23000,
+        "eleve": 9500,
+        "etudiant": 13500,
+        "enseignant": 13500,
+        "formateur": 18500,
+        "demandeur_emploi": 11500
+      },
+      "economie": {
+        "particulier": 4000,
+        "eleve": 1500,
+        "etudiant": 2500,
+        "enseignant": 2500,
+        "formateur": 3000,
+        "demandeur_emploi": 2000
+      }
+    },
+    {
+      "id": "licence-complete",
+      "libelle": "Pack Licence : bases, POO et Python avancé",
+      "parcours": [
+        "p01",
+        "p02",
+        "p03"
+      ],
+      "remise": 0.2,
+      "prix": {
+        "particulier": 37500,
+        "eleve": 15000,
+        "etudiant": 22500,
+        "enseignant": 22500,
+        "formateur": 30000,
+        "demandeur_emploi": 19000
+      },
+      "economie": {
+        "particulier": 9500,
+        "eleve": 4000,
+        "etudiant": 5500,
+        "enseignant": 5500,
+        "formateur": 7500,
+        "demandeur_emploi": 4500
+      }
+    }
+  ]
+}

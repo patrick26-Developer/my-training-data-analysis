@@ -2,6 +2,10 @@
 
 ⏱ 40 min · 🎯 Débutant · 📦 Prérequis : leçon 4.3
 
+<!-- cadre:debut -->
+> 🔥 **Pourquoi tu vas aimer cette leçon** — Doublons éliminés, produits en commun entre deux boutiques, tout cela en une seule opération : voici les ensembles.
+<!-- /cadre:debut -->
+
 ## 🎯 Ce que tu sauras faire
 
 - Créer un ensemble et retirer les doublons d'une liste
@@ -124,3 +128,15 @@ pytest parcours/p01_python_fondamentaux/exercices/test_ex14_ensembles.py -v
 4. Un ensemble n'a pas d'ordre, donc pas d'indices.
 
 </details>
+
+<!-- cadre:fin -->
+---
+
+## 🎉 Bravo !
+
+Les ensembles sont ajoutés à ta boîte à outils. Éliminer les doublons n'a jamais été aussi simple.
+
+💬 *Bloqué(e) ? C'est normal et ça fait partie de l'apprentissage. Relis la section « Pièges courants », refais l'exemple en le tapant toi-même, puis demande de l'aide dans la communauté.*
+
+**Prochaine étape :** [Leçon 4.5 — Les compréhensions](l15_comprehensions.md).
+<!-- /cadre:fin -->

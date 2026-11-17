@@ -2,6 +2,10 @@
 
 ⏱ 50 min · 🎯 Débutant+ · 📦 Prérequis : leçons 4.1 à 4.4
 
+<!-- cadre:debut -->
+> 🔥 **Pourquoi tu vas aimer cette leçon** — Transformer et filtrer une liste entière en une seule ligne : les compréhensions vont faire de toi quelqu'un d'élégant.
+<!-- /cadre:debut -->
+
 ## 🎯 Ce que tu sauras faire
 
 - Construire une liste, un ensemble ou un dictionnaire **en une ligne**
@@ -151,3 +155,15 @@ La solution de référence est dans [`../projets/m4_gestionnaire_de_stock.py`](.
 4. Les trois lignes sont le même objet : modifier l'une modifie les autres.
 
 </details>
+
+<!-- cadre:fin -->
+---
+
+## 🎉 Bravo !
+
+Le module 4 est terminé : tu manies listes, tuples, dictionnaires et ensembles. Tu peux déjà construire un vrai gestionnaire de stock.
+
+💬 *Bloqué(e) ? C'est normal et ça fait partie de l'apprentissage. Relis la section « Pièges courants », refais l'exemple en le tapant toi-même, puis demande de l'aide dans la communauté.*
+
+**Prochaine étape :** [Leçon 5.1 — Définir et appeler une fonction](l16_definir_et_appeler.md).
+<!-- /cadre:fin -->

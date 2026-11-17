@@ -2,6 +2,10 @@
 
 ⏱ 40 min · 🎯 Débutant · 📦 Prérequis : leçon 2.2
 
+<!-- cadre:debut -->
+> 🔥 **Pourquoi tu vas aimer cette leçon** — Un menu clair et lisible en quelques lignes : `match` va rendre tes choix multiples bien plus élégants.
+<!-- /cadre:debut -->
+
 ## 🎯 Ce que tu sauras faire
 
 - Utiliser `match / case` pour remplacer une longue chaîne de `elif`
@@ -137,3 +141,15 @@ pytest parcours/p01_python_fondamentaux/exercices/test_ex07_match.py -v
 4. `if` : c'est une comparaison sur un intervalle, pas sur des valeurs précises.
 
 </details>
+
+<!-- cadre:fin -->
+---
+
+## 🎉 Bravo !
+
+Tu as ajouté un outil élégant à ta boîte : tes menus seront désormais propres et faciles à lire.
+
+💬 *Bloqué(e) ? C'est normal et ça fait partie de l'apprentissage. Relis la section « Pièges courants », refais l'exemple en le tapant toi-même, puis demande de l'aide dans la communauté.*
+
+**Prochaine étape :** [Leçon 3.1 — La boucle `while`](l08_while.md).
+<!-- /cadre:fin -->

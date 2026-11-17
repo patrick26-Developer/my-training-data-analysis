@@ -2,6 +2,10 @@
 
 ⏱ 8 à 12 heures · 🎯 Évaluation finale du parcours P01 · 📦 Prérequis : modules 1 à 10
 
+<!-- cadre:debut -->
+> 🔥 **Pourquoi tu vas aimer cette leçon** — C'est le moment de tout rassembler : tu vas construire seul(e) une application complète, du début à la fin.
+<!-- /cadre:debut -->
+
 ## 🎯 Objectif
 
 Construire, **seul(e)**, une application console complète pour une petite boutique, en mobilisant tout le parcours :
@@ -98,3 +102,15 @@ python -m pytest parcours/p01_python_fondamentaux/projets
 Félicitations ! Tu maîtrises les **fondamentaux de Python**. Prochaine étape : le parcours **P02 — POO et
 conception**, où tu transformeras ce projet avec des classes (`Produit`, `Stock`, `Vente`) pour un code encore
 plus propre.
+
+<!-- cadre:fin -->
+---
+
+## 🎉 Bravo !
+
+Tu as parcouru le chemin complet des fondamentaux de Python. Tu peux être fier de toi : tu écris maintenant de vrais programmes.
+
+💬 *Bloqué(e) ? C'est normal et ça fait partie de l'apprentissage. Relis la section « Pièges courants », refais l'exemple en le tapant toi-même, puis demande de l'aide dans la communauté.*
+
+Tu as terminé ce parcours. Prochaine étape : le parcours suivant !
+<!-- /cadre:fin -->

@@ -2,6 +2,10 @@
 
 ⏱ 45 min · 🎯 Débutant · 📦 Prérequis : module 1
 
+<!-- cadre:debut -->
+> 🔥 **Pourquoi tu vas aimer cette leçon** — Oui ou non, vrai ou faux : tu vas apprendre à poser à ton programme les questions qui lui permettront de décider.
+<!-- /cadre:debut -->
+
 ## 🎯 Ce que tu sauras faire
 
 - Comprendre le type `bool` (`True` / `False`)
@@ -163,3 +167,15 @@ pytest parcours/p01_python_fondamentaux/exercices/test_ex05_booleens_et_comparai
 5. `10 <= note <= 20`
 
 </details>
+
+<!-- cadre:fin -->
+---
+
+## 🎉 Bravo !
+
+Tu sais maintenant poser des questions à tes données. Dans la leçon suivante, ton programme va enfin faire des choix.
+
+💬 *Bloqué(e) ? C'est normal et ça fait partie de l'apprentissage. Relis la section « Pièges courants », refais l'exemple en le tapant toi-même, puis demande de l'aide dans la communauté.*
+
+**Prochaine étape :** [Leçon 2.2 — `if`, `elif`, `else` : choisir quoi faire](l06_if_elif_else.md).
+<!-- /cadre:fin -->

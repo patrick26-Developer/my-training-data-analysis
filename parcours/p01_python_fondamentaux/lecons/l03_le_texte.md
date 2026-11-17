@@ -2,6 +2,10 @@
 
 ⏱ 60 min · 🎯 Débutant · 📦 Prérequis : leçon 1.2
 
+<!-- cadre:debut -->
+> 🔥 **Pourquoi tu vas aimer cette leçon** — Les noms mal écrits, les majuscules au hasard, les espaces en trop : tu vas apprendre à nettoyer n'importe quel texte en une ligne.
+<!-- /cadre:debut -->
+
 ## 🎯 Ce que tu sauras faire
 
 - Créer et assembler du texte, y compris avec les **f-strings**
@@ -223,3 +227,15 @@ pytest parcours/p01_python_fondamentaux/exercices/test_ex03_le_texte.py -v
 5. `f"{x:.2f} FCFA"`
 
 </details>
+
+<!-- cadre:fin -->
+---
+
+## 🎉 Bravo !
+
+Tu manipules le texte comme un pro : découper, nettoyer, formater. Tu peux déjà traiter des données réelles.
+
+💬 *Bloqué(e) ? C'est normal et ça fait partie de l'apprentissage. Relis la section « Pièges courants », refais l'exemple en le tapant toi-même, puis demande de l'aide dans la communauté.*
+
+**Prochaine étape :** [Leçon 1.4 — Entrées et sorties : dialoguer avec l'utilisateur](l04_entrees_et_sorties.md).
+<!-- /cadre:fin -->

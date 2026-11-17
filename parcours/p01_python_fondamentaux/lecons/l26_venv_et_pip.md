@@ -2,6 +2,10 @@
 
 ⏱ 45 min · 🎯 Débutant+ · 📦 Prérequis : leçon 7.1
 
+<!-- cadre:debut -->
+> 🔥 **Pourquoi tu vas aimer cette leçon** — Un environnement par projet, une liste de dépendances : tu vas travailler comme dans une vraie équipe de développement.
+<!-- /cadre:debut -->
+
 ## 🎯 Ce que tu sauras faire
 
 - Installer des paquets externes avec `pip`
@@ -148,3 +152,15 @@ pytest parcours/p01_python_fondamentaux/exercices/test_ex26_venv_et_pip.py -v
 4. Il est volumineux, dépend de la machine et peut être recréé à partir de `requirements.txt`.
 
 </details>
+
+<!-- cadre:fin -->
+---
+
+## 🎉 Bravo !
+
+Tu sais isoler tes projets et installer des bibliothèques proprement. C'est une habitude de professionnel.
+
+💬 *Bloqué(e) ? C'est normal et ça fait partie de l'apprentissage. Relis la section « Pièges courants », refais l'exemple en le tapant toi-même, puis demande de l'aide dans la communauté.*
+
+**Prochaine étape :** [Leçon 7.4 — Écrire ses propres modules et packages](l27_ecrire_ses_modules.md).
+<!-- /cadre:fin -->

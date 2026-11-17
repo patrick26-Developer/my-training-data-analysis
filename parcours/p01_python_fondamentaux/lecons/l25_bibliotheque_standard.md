@@ -2,6 +2,10 @@
 
 ⏱ 60 min · 🎯 Intermédiaire · 📦 Prérequis : leçon 7.1
 
+<!-- cadre:debut -->
+> 🔥 **Pourquoi tu vas aimer cette leçon** — Dates, hasard, statistiques, système : un tour d'horizon des trésors cachés de Python, sans rien installer.
+<!-- /cadre:debut -->
+
 ## 🎯 Ce que tu sauras faire
 
 - Manipuler des **dates et heures** (`datetime`)
@@ -181,3 +185,15 @@ pytest parcours/p01_python_fondamentaux/exercices/test_ex25_bibliotheque_standar
 4. `[('a', 2)]` : l'élément le plus fréquent avec son nombre d'apparitions.
 
 </details>
+
+<!-- cadre:fin -->
+---
+
+## 🎉 Bravo !
+
+Tu connais maintenant les principaux outils de la bibliothèque standard. Avant d'installer quoi que ce soit, tu sauras où chercher.
+
+💬 *Bloqué(e) ? C'est normal et ça fait partie de l'apprentissage. Relis la section « Pièges courants », refais l'exemple en le tapant toi-même, puis demande de l'aide dans la communauté.*
+
+**Prochaine étape :** [Leçon 7.3 — Environnements virtuels et `pip`](l26_venv_et_pip.md).
+<!-- /cadre:fin -->

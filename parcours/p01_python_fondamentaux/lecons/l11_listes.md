@@ -2,6 +2,10 @@
 
 ⏱ 60 min · 🎯 Débutant · 📦 Prérequis : module 3
 
+<!-- cadre:debut -->
+> 🔥 **Pourquoi tu vas aimer cette leçon** — Fini les 50 variables pour 50 produits : une seule liste, et ton stock entier tient dans ta main.
+<!-- /cadre:debut -->
+
 ## 🎯 Ce que tu sauras faire
 
 - Créer une liste, lire et modifier ses éléments
@@ -171,3 +175,15 @@ pytest parcours/p01_python_fondamentaux/exercices/test_ex11_listes.py -v
 4. `a.copy()`, `a[:]` ou `list(a)`.
 
 </details>
+
+<!-- cadre:fin -->
+---
+
+## 🎉 Bravo !
+
+Tu sais ranger, chercher et trier des données. Les listes serviront dans presque tous tes futurs programmes.
+
+💬 *Bloqué(e) ? C'est normal et ça fait partie de l'apprentissage. Relis la section « Pièges courants », refais l'exemple en le tapant toi-même, puis demande de l'aide dans la communauté.*
+
+**Prochaine étape :** [Leçon 4.2 — Les tuples](l12_tuples.md).
+<!-- /cadre:fin -->

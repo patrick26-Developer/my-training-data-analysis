@@ -2,6 +2,10 @@
 
 ⏱ 70 min · 🎯 Intermédiaire · 📦 Prérequis : modules 4 et 7
 
+<!-- cadre:debut -->
+> 🔥 **Pourquoi tu vas aimer cette leçon** — Courbes, barres, histogrammes : transforme des colonnes de chiffres en graphiques qui racontent une histoire.
+<!-- /cadre:debut -->
+
 ## 🎯 Ce que tu sauras faire
 
 - Installer et importer `matplotlib`
@@ -177,3 +181,15 @@ pytest parcours/p01_python_fondamentaux/exercices/test_ex33_matplotlib.py -v
 4. Sinon les différences paraissent plus grandes qu'elles ne le sont.
 
 </details>
+
+<!-- cadre:fin -->
+---
+
+## 🎉 Bravo !
+
+Tu sais maintenant dessiner les principaux graphiques de la data. Chaque chiffre peut désormais devenir une image.
+
+💬 *Bloqué(e) ? C'est normal et ça fait partie de l'apprentissage. Relis la section « Pièges courants », refais l'exemple en le tapant toi-même, puis demande de l'aide dans la communauté.*
+
+**Prochaine étape :** [Leçon 9.3 — Représenter une fonction mathématique](l34_fonctions_mathematiques.md).
+<!-- /cadre:fin -->

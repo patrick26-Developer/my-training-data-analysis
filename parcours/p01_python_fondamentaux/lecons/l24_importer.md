@@ -2,6 +2,10 @@
 
 ⏱ 40 min · 🎯 Débutant+ · 📦 Prérequis : module 6
 
+<!-- cadre:debut -->
+> 🔥 **Pourquoi tu vas aimer cette leçon** — Python contient des milliers d'outils prêts à l'emploi : tu vas apprendre à aller les chercher.
+<!-- /cadre:debut -->
+
 ## 🎯 Ce que tu sauras faire
 
 - Utiliser `import`, `from ... import`, `as`
@@ -53,11 +57,16 @@ Conventions : `import numpy as np`, `import pandas as pd` (tu les rencontreras e
 
 ```python
 import math
+import random
 
 print(dir(math))  # liste des noms disponibles
 help(math.floor)  # documentation d'une fonction
-print(math.__file__)  # où est le fichier du module ?
+print(random.__file__)  # où est le fichier du module ?
 ```
+
+> 💡 Pourquoi `random` et pas `math` pour `__file__` ? Parce que certains modules (comme `math`) sont écrits
+> en langage C, à l'intérieur de Python lui-même : ils n'ont pas de fichier `.py` à montrer.
+> `random`, lui, est un vrai fichier Python que tu peux ouvrir et lire — très instructif !
 
 ### 2.5 Ce qu'est un module
 
@@ -128,3 +137,15 @@ pytest parcours/p01_python_fondamentaux/exercices/test_ex24_importer.py -v
 4. Il masque le vrai module `math`, ce qui provoque des erreurs.
 
 </details>
+
+<!-- cadre:fin -->
+---
+
+## 🎉 Bravo !
+
+Tu sais utiliser les modules : tu n'as plus besoin de tout réinventer.
+
+💬 *Bloqué(e) ? C'est normal et ça fait partie de l'apprentissage. Relis la section « Pièges courants », refais l'exemple en le tapant toi-même, puis demande de l'aide dans la communauté.*
+
+**Prochaine étape :** [Leçon 7.2 — La bibliothèque standard : un tour d'horizon](l25_bibliotheque_standard.md).
+<!-- /cadre:fin -->

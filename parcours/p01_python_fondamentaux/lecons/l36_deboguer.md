@@ -2,6 +2,10 @@
 
 ⏱ 60 min · 🎯 Intermédiaire · 📦 Prérequis : modules 1 à 6
 
+<!-- cadre:debut -->
+> 🔥 **Pourquoi tu vas aimer cette leçon** — Les bugs ne sont pas des ennemis : ce sont des énigmes. Tu vas apprendre la méthode des détectives du code.
+<!-- /cadre:debut -->
+
 ## 🎯 Ce que tu sauras faire
 
 - Appliquer une **méthode** pour trouver un bug (au lieu de deviner)
@@ -175,3 +179,15 @@ pytest parcours/p01_python_fondamentaux/exercices/test_ex36_deboguer.py -v
 4. Il affiche `x = valeur` (nom et valeur de la variable).
 
 </details>
+
+<!-- cadre:fin -->
+---
+
+## 🎉 Bravo !
+
+Tu sais traquer un bug avec méthode. C'est la compétence qui fait gagner le plus de temps dans toute une carrière.
+
+💬 *Bloqué(e) ? C'est normal et ça fait partie de l'apprentissage. Relis la section « Pièges courants », refais l'exemple en le tapant toi-même, puis demande de l'aide dans la communauté.*
+
+**Prochaine étape :** [Leçon 10.2 — Tes premiers tests](l37_premiers_tests.md).
+<!-- /cadre:fin -->

@@ -2,6 +2,10 @@
 
 ⏱ 55 min · 🎯 Intermédiaire · 📦 Prérequis : leçons 6.1 et 6.2
 
+<!-- cadre:debut -->
+> 🔥 **Pourquoi tu vas aimer cette leçon** — CSV pour parler à Excel, JSON pour parler aux applications web : deux langues universelles que tu vas apprendre.
+<!-- /cadre:debut -->
+
 ## 🎯 Ce que tu sauras faire
 
 - Lire et écrire un fichier **CSV** (tableur) avec le module `csv`
@@ -65,7 +69,8 @@ Sans en-tête, on utilise `csv.reader` (lignes = listes) et `csv.writer`.
 Les fichiers français exportés d'Excel utilisent souvent `;` :
 
 ```python
-csv.DictReader(f, delimiter=";")
+with open("stock.csv", newline="", encoding="utf-8") as f:
+    lecteur = csv.DictReader(f, delimiter=";")
 ```
 
 ### 2.4 JSON : écrire
@@ -169,3 +174,15 @@ pytest parcours/p01_python_fondamentaux/exercices/test_ex22_csv_et_json.py -v
 4. `json.dumps`.
 
 </details>
+
+<!-- cadre:fin -->
+---
+
+## 🎉 Bravo !
+
+Tu sais échanger des données avec des tableurs et des applications. C'est une compétence très recherchée.
+
+💬 *Bloqué(e) ? C'est normal et ça fait partie de l'apprentissage. Relis la section « Pièges courants », refais l'exemple en le tapant toi-même, puis demande de l'aide dans la communauté.*
+
+**Prochaine étape :** [Leçon 6.4 — `pathlib` : manipuler les chemins et les dossiers](l23_pathlib.md).
+<!-- /cadre:fin -->

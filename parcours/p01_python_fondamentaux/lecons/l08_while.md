@@ -2,6 +2,10 @@
 
 ⏱ 50 min · 🎯 Débutant · 📦 Prérequis : module 2
 
+<!-- cadre:debut -->
+> 🔥 **Pourquoi tu vas aimer cette leçon** — Imagine répéter une tâche un million de fois sans te fatiguer : c'est exactement ce que va faire ton programme.
+<!-- /cadre:debut -->
+
 ## 🎯 Ce que tu sauras faire
 
 - Répéter des instructions **tant qu'une condition est vraie**
@@ -145,3 +149,15 @@ pytest parcours/p01_python_fondamentaux/exercices/test_ex08_while.py -v
 4. C'est une valeur spéciale (comme `"fin"`) qui signale la fin de la saisie.
 
 </details>
+
+<!-- cadre:fin -->
+---
+
+## 🎉 Bravo !
+
+Tu viens de découvrir la répétition, l'une des plus grandes forces de la programmation. Un ordinateur ne se lasse jamais.
+
+💬 *Bloqué(e) ? C'est normal et ça fait partie de l'apprentissage. Relis la section « Pièges courants », refais l'exemple en le tapant toi-même, puis demande de l'aide dans la communauté.*
+
+**Prochaine étape :** [Leçon 3.2 — La boucle `for` et `range`](l09_for_et_range.md).
+<!-- /cadre:fin -->

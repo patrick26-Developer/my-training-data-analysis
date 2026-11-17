@@ -2,6 +2,10 @@
 
 ⏱ 45 min · 🎯 Intermédiaire · 📦 Prérequis : leçons 6.2 et 6.3
 
+<!-- cadre:debut -->
+> 🔥 **Pourquoi tu vas aimer cette leçon** — Des chemins qui marchent partout, des dossiers qui se rangent tout seuls : `pathlib` va t'épargner bien des soucis.
+<!-- /cadre:debut -->
+
 ## 🎯 Ce que tu sauras faire
 
 - Construire des chemins qui marchent sous Windows, Linux et macOS
@@ -154,3 +158,15 @@ Solution : [`../projets/m6_carnet_d_adresses.py`](../projets/m6_carnet_d_adresse
 4. `Path(__file__).resolve().parent`
 
 </details>
+
+<!-- cadre:fin -->
+---
+
+## 🎉 Bravo !
+
+Le module 6 est terminé : erreurs, fichiers, CSV, JSON et chemins. Tu peux maintenant créer un carnet d'adresses qui se souvient.
+
+💬 *Bloqué(e) ? C'est normal et ça fait partie de l'apprentissage. Relis la section « Pièges courants », refais l'exemple en le tapant toi-même, puis demande de l'aide dans la communauté.*
+
+**Prochaine étape :** [Leçon 7.1 — Importer des modules](l24_importer.md).
+<!-- /cadre:fin -->

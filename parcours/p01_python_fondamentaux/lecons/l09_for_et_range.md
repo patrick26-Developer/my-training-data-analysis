@@ -2,6 +2,10 @@
 
 ⏱ 50 min · 🎯 Débutant · 📦 Prérequis : leçon 3.1
 
+<!-- cadre:debut -->
+> 🔥 **Pourquoi tu vas aimer cette leçon** — Tables de multiplication, comptes à rebours, dessins en étoiles : avec `for`, des tâches longues deviennent de simples jeux.
+<!-- /cadre:debut -->
+
 ## 🎯 Ce que tu sauras faire
 
 - Parcourir une suite de valeurs avec `for`
@@ -182,3 +186,15 @@ pytest parcours/p01_python_fondamentaux/exercices/test_ex09_for_et_range.py -v
 4. Quand on ne connaît pas le nombre de tours à l'avance et qu'on répète jusqu'à un événement.
 
 </details>
+
+<!-- cadre:fin -->
+---
+
+## 🎉 Bravo !
+
+`for` et `range` n'ont plus de secret pour toi. Tu peux désormais parcourir n'importe quelle suite de valeurs.
+
+💬 *Bloqué(e) ? C'est normal et ça fait partie de l'apprentissage. Relis la section « Pièges courants », refais l'exemple en le tapant toi-même, puis demande de l'aide dans la communauté.*
+
+**Prochaine étape :** [Leçon 3.3 — `break`, `continue` et boucles imbriquées](l10_break_continue_imbriquees.md).
+<!-- /cadre:fin -->

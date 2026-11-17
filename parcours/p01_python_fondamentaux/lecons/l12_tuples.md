@@ -2,6 +2,10 @@
 
 ⏱ 40 min · 🎯 Débutant · 📦 Prérequis : leçon 4.1
 
+<!-- cadre:debut -->
+> 🔥 **Pourquoi tu vas aimer cette leçon** — Un petit paquet de valeurs qui ne change jamais : les tuples vont te permettre de renvoyer plusieurs résultats d'un coup.
+<!-- /cadre:debut -->
+
 ## 🎯 Ce que tu sauras faire
 
 - Créer et lire un tuple
@@ -144,3 +148,15 @@ pytest parcours/p01_python_fondamentaux/exercices/test_ex12_tuples.py -v
 4. `[2, 3]`
 
 </details>
+
+<!-- cadre:fin -->
+---
+
+## 🎉 Bravo !
+
+Tu maîtrises les tuples et le déballage. Échanger deux valeurs en une ligne, c'est la classe !
+
+💬 *Bloqué(e) ? C'est normal et ça fait partie de l'apprentissage. Relis la section « Pièges courants », refais l'exemple en le tapant toi-même, puis demande de l'aide dans la communauté.*
+
+**Prochaine étape :** [Leçon 4.3 — Les dictionnaires](l13_dictionnaires.md).
+<!-- /cadre:fin -->

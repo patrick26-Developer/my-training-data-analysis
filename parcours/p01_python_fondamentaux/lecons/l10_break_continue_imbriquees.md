@@ -2,6 +2,10 @@
 
 ⏱ 50 min · 🎯 Débutant · 📦 Prérequis : leçons 3.1 et 3.2
 
+<!-- cadre:debut -->
+> 🔥 **Pourquoi tu vas aimer cette leçon** — Chercher, sauter, s'arrêter au bon moment : tu vas apprendre à piloter tes boucles avec précision, et même à dessiner des motifs.
+<!-- /cadre:debut -->
+
 ## 🎯 Ce que tu sauras faire
 
 - Sortir d'une boucle avec `break`, sauter un tour avec `continue`
@@ -139,3 +143,15 @@ pytest parcours/p01_python_fondamentaux/exercices/test_ex10_break_continue_imbri
 4. Si la ligne qui fait progresser le compteur est après le `continue`, elle n'est jamais exécutée.
 
 </details>
+
+<!-- cadre:fin -->
+---
+
+## 🎉 Bravo !
+
+Tu contrôles tes boucles comme un chef d'orchestre. Le module 3 est terminé : bravo pour ta régularité !
+
+💬 *Bloqué(e) ? C'est normal et ça fait partie de l'apprentissage. Relis la section « Pièges courants », refais l'exemple en le tapant toi-même, puis demande de l'aide dans la communauté.*
+
+**Prochaine étape :** [Leçon 4.1 — Les listes](l11_listes.md).
+<!-- /cadre:fin -->

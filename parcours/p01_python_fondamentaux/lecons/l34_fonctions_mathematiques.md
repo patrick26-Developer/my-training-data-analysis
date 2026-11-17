@@ -2,6 +2,10 @@
 
 ⏱ 60 min · 🎯 Intermédiaire · 📦 Prérequis : leçons 8.1, 9.2
 
+<!-- cadre:debut -->
+> 🔥 **Pourquoi tu vas aimer cette leçon** — Tracer une parabole, trouver un zéro, calculer une aire : les mathématiques deviennent visuelles.
+<!-- /cadre:debut -->
+
 ## 🎯 Ce que tu sauras faire
 
 - Calculer une **table de valeurs** d'une fonction f(x)
@@ -216,3 +220,15 @@ pytest parcours/p01_python_fondamentaux/exercices/test_ex34_fonctions_mathematiq
 4. `ax.set_aspect("equal")`.
 
 </details>
+
+<!-- cadre:fin -->
+---
+
+## 🎉 Bravo !
+
+Tu représentes des fonctions et résous des équations par programme. L'analyse devient un jeu.
+
+💬 *Bloqué(e) ? C'est normal et ça fait partie de l'apprentissage. Relis la section « Pièges courants », refais l'exemple en le tapant toi-même, puis demande de l'aide dans la communauté.*
+
+**Prochaine étape :** [Leçon 9.4 — Projet : le tableau de bord d'une boutique](l35_graphique_des_ventes.md).
+<!-- /cadre:fin -->

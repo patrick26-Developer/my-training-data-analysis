@@ -2,6 +2,10 @@
 
 ⏱ 55 min · 🎯 Intermédiaire · 📦 Prérequis : leçon 6.1
 
+<!-- cadre:debut -->
+> 🔥 **Pourquoi tu vas aimer cette leçon** — Fini les données qui disparaissent à la fermeture du programme : tu vas apprendre à les sauvegarder dans un fichier.
+<!-- /cadre:debut -->
+
 ## 🎯 Ce que tu sauras faire
 
 - Ouvrir un fichier texte en lecture, écriture, ajout
@@ -155,3 +159,15 @@ pytest parcours/p01_python_fondamentaux/exercices/test_ex21_fichiers.py -v
 4. `FileNotFoundError`.
 
 </details>
+
+<!-- cadre:fin -->
+---
+
+## 🎉 Bravo !
+
+Ton programme a maintenant une mémoire durable. Ce que tu écris survit à l'arrêt de l'ordinateur.
+
+💬 *Bloqué(e) ? C'est normal et ça fait partie de l'apprentissage. Relis la section « Pièges courants », refais l'exemple en le tapant toi-même, puis demande de l'aide dans la communauté.*
+
+**Prochaine étape :** [Leçon 6.3 — Fichiers CSV et JSON](l22_csv_et_json.md).
+<!-- /cadre:fin -->

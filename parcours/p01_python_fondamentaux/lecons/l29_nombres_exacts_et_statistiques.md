@@ -2,6 +2,10 @@
 
 ⏱ 55 min · 🎯 Intermédiaire · 📦 Prérequis : leçon 8.1
 
+<!-- cadre:debut -->
+> 🔥 **Pourquoi tu vas aimer cette leçon** — Pourquoi 0,1 + 0,2 ne fait pas 0,3 ? Et comment calculer l'argent sans la moindre erreur ? Tu vas le découvrir.
+<!-- /cadre:debut -->
+
 ## 🎯 Ce que tu sauras faire
 
 - Calculer **exactement** avec `decimal` (argent) et `fractions`
@@ -156,3 +160,15 @@ pytest parcours/p01_python_fondamentaux/exercices/test_ex29_nombres_exacts_et_st
 4. `Fraction(5, 6)`.
 
 </details>
+
+<!-- cadre:fin -->
+---
+
+## 🎉 Bravo !
+
+Tu sais calculer avec exactitude, simuler le hasard et résumer des données. Tu fais déjà un peu de data science !
+
+💬 *Bloqué(e) ? C'est normal et ça fait partie de l'apprentissage. Relis la section « Pièges courants », refais l'exemple en le tapant toi-même, puis demande de l'aide dans la communauté.*
+
+**Prochaine étape :** [Leçon 8.3 — Tableaux à deux dimensions et matrices](l30_tableaux_2d.md).
+<!-- /cadre:fin -->

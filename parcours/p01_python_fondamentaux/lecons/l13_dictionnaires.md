@@ -2,6 +2,10 @@
 
 ⏱ 60 min · 🎯 Débutant · 📦 Prérequis : leçons 4.1 et 4.2
 
+<!-- cadre:debut -->
+> 🔥 **Pourquoi tu vas aimer cette leçon** — Retrouver le prix d'un produit à partir de son nom, instantanément : bienvenue dans le monde des dictionnaires.
+<!-- /cadre:debut -->
+
 ## 🎯 Ce que tu sauras faire
 
 - Associer des **clés** à des **valeurs**
@@ -161,3 +165,15 @@ pytest parcours/p01_python_fondamentaux/exercices/test_ex13_dictionnaires.py -v
 4. `d[k] = d.get(k, 0) + 1`
 
 </details>
+
+<!-- cadre:fin -->
+---
+
+## 🎉 Bravo !
+
+Tu sais maintenant associer des clés à des valeurs, compter et regrouper. Tu tiens là l'outil préféré des data scientists.
+
+💬 *Bloqué(e) ? C'est normal et ça fait partie de l'apprentissage. Relis la section « Pièges courants », refais l'exemple en le tapant toi-même, puis demande de l'aide dans la communauté.*
+
+**Prochaine étape :** [Leçon 4.4 — Les ensembles (`set`)](l14_ensembles.md).
+<!-- /cadre:fin -->

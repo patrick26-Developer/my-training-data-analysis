@@ -22,6 +22,19 @@ Principe : **un parcours est terminé complètement avant d'ouvrir le suivant.**
 - [`docs/CURSUS.md`](docs/CURSUS.md) — les 12 parcours, le LMD, les crédits et les certificats
 - [`docs/MODELE_DE_LECON.md`](docs/MODELE_DE_LECON.md) — la structure commune à toutes les leçons
 - [`docs/PLATEFORME.md`](docs/PLATEFORME.md) — architecture du futur site web et feuille de route
+- [`docs/GUIDE_DE_STYLE.md`](docs/GUIDE_DE_STYLE.md) — écrire des leçons qui donnent envie d'apprendre
+- [`docs/TARIFS.md`](docs/TARIFS.md) — publics (élèves, étudiants, enseignants, entreprises…), licences et packs
+- [`docs/pages_de_vente/`](docs/pages_de_vente/) — textes de pages de vente par parcours
+- [`catalogue/`](catalogue/) — `tarifs.toml` (tu règles les prix) et `catalogue.json` (lu par ta plateforme)
+
+## Outils du projet
+
+| Commande | Rôle |
+|---|---|
+| `python outils/verifier_lecons.py` | exécute les exemples de code des leçons pour vérifier qu'ils fonctionnent |
+| `python outils/sync_tests_solutions.py` | génère les tests des solutions à partir de ceux des exercices |
+| `python outils/ajouter_cadre_lecons.py` | ajoute l'accroche et le « Bravo » des leçons P01 |
+| `python outils/generer_catalogue.py` | génère `catalogue/catalogue.json` (parcours, durées, prix par public) |
 
 ## Arborescence
 

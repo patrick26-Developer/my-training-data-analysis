@@ -2,6 +2,10 @@
 
 ⏱ 55 min · 🎯 Intermédiaire · 📦 Prérequis : leçons 4.1, 4.5 et 8.1
 
+<!-- cadre:debut -->
+> 🔥 **Pourquoi tu vas aimer cette leçon** — Une feuille de calcul, un damier, une image : tout est un tableau. Tu vas apprendre à les manipuler.
+<!-- /cadre:debut -->
+
 ## 🎯 Ce que tu sauras faire
 
 - Représenter un **tableau** (lignes × colonnes) avec une liste de listes
@@ -179,3 +183,15 @@ pytest parcours/p01_python_fondamentaux/exercices/test_ex30_tableaux_2d.py -v
 4. `1 × 4 − 2 × 3 = −2`.
 
 </details>
+
+<!-- cadre:fin -->
+---
+
+## 🎉 Bravo !
+
+Tu sais manipuler des matrices et des grilles. Tu viens de poser les bases de NumPy et de la data science.
+
+💬 *Bloqué(e) ? C'est normal et ça fait partie de l'apprentissage. Relis la section « Pièges courants », refais l'exemple en le tapant toi-même, puis demande de l'aide dans la communauté.*
+
+**Prochaine étape :** [Leçon 8.4 — Algorithmes classiques](l31_algorithmes_classiques.md).
+<!-- /cadre:fin -->

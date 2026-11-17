@@ -1,0 +1,122 @@
+# Grille de tarifs — Mayele Python Académie
+#
+# ⚠️ Tous les montants ci-dessous sont des PROPOSITIONS DE DÉPART à ajuster librement.
+#    Tu modifies ce fichier, puis tu relances :  python outils/generer_catalogue.py
+#    Le fichier catalogue/catalogue.json (lu par ta plateforme) est alors régénéré.
+
+[general]
+devise = "XAF"                  # franc CFA (BEAC) — Congo-Brazzaville
+parite_euro = 655.957           # 1 EUR = 655,957 XAF (parité fixe)
+arrondi = 500                   # les prix sont arrondis au multiple de 500 XAF le plus proche
+duree_acces_mois = 12           # durée d'accès incluse dans chaque achat (0 = illimitée)
+
+# ---------------------------------------------------------------------------
+# Les publics. Le prix d'un parcours = prix de base × coefficient du public.
+# `justificatif` : ce que la plateforme doit demander pour activer le tarif.
+# ---------------------------------------------------------------------------
+[publics.particulier]
+libelle = "Particulier"
+coefficient = 1.0
+justificatif = "aucun"
+description = "Toute personne qui apprend pour elle-même."
+
+[publics.eleve]
+libelle = "Élève (collège, lycée)"
+coefficient = 0.4
+justificatif = "carte scolaire ou attestation de scolarité de l'année en cours"
+description = "Tarif très réduit pour les élèves."
+
+[publics.etudiant]
+libelle = "Étudiant"
+coefficient = 0.6
+justificatif = "carte d'étudiant ou certificat d'inscription de l'année en cours"
+description = "Tarif étudiant (université, institut, centre de formation)."
+
+[publics.enseignant]
+libelle = "Enseignant"
+coefficient = 0.6
+justificatif = "attestation de l'établissement ou carte professionnelle"
+description = "Pour préparer ses propres cours. Accès personnel."
+
+[publics.formateur]
+libelle = "Formateur indépendant"
+coefficient = 0.8
+justificatif = "déclaration d'activité ou pièce d'identité professionnelle"
+description = "Accès personnel pour se former et préparer ses séances. Ne donne pas le droit de revendre le contenu."
+
+[publics.demandeur_emploi]
+libelle = "Demandeur d'emploi / reconversion"
+coefficient = 0.5
+justificatif = "attestation d'inscription ou déclaration sur l'honneur"
+description = "Soutien à la reconversion professionnelle."
+
+# ---------------------------------------------------------------------------
+# Licences collectives : plusieurs personnes, un seul paiement.
+# prix par personne = prix de base × coefficient × (1 - remise du palier)
+# ---------------------------------------------------------------------------
+[licences.entreprise]
+libelle = "Entreprise / équipe"
+coefficient = 1.5               # plus élevé : usage professionnel, facture, support
+minimum_places = 3
+justificatif = "raison sociale + NIU/RCCM, facture sur demande"
+paliers = [                     # remise selon le nombre de places
+  { a_partir_de = 3,  remise = 0.00 },
+  { a_partir_de = 10, remise = 0.10 },
+  { a_partir_de = 25, remise = 0.20 },
+  { a_partir_de = 50, remise = 0.30 },
+]
+
+[licences.etablissement]
+libelle = "École / université / centre de formation"
+coefficient = 0.35              # par élève ou étudiant, pour une classe ou une promotion
+minimum_places = 20
+justificatif = "convention ou bon de commande de l'établissement"
+paliers = [
+  { a_partir_de = 20,  remise = 0.00 },
+  { a_partir_de = 50,  remise = 0.10 },
+  { a_partir_de = 100, remise = 0.20 },
+]
+
+# ---------------------------------------------------------------------------
+# Packs : acheter plusieurs parcours ensemble.
+# ---------------------------------------------------------------------------
+[[packs]]
+id = "licence-1"
+libelle = "Pack Licence 1 : bases solides"
+parcours = ["p01", "p02"]
+remise = 0.15
+
+[[packs]]
+id = "licence-complete"
+libelle = "Pack Licence : bases, POO et Python avancé"
+parcours = ["p01", "p02", "p03"]
+remise = 0.20
+
+# ---------------------------------------------------------------------------
+# Les parcours : prix de base pour un particulier (en XAF, acquisition à vie ou accès 12 mois).
+# `apercu_gratuit` : leçons lisibles gratuitement, pour donner envie avant d'acheter.
+# `statut` : "disponible", "bientot" ou "prevu".
+# ---------------------------------------------------------------------------
+[parcours.p01]
+titre_court = "Python Fondamentaux"
+prix_base = 12000
+statut = "disponible"
+apercu_gratuit = ["l01", "l02", "l03", "l04"]       # tout le module 1
+promesse = "Écris tes premiers vrais programmes et construis une application de boutique complète."
+pour_qui = "Débutant complet, aucun prérequis."
+
+[parcours.p02]
+titre_court = "POO et conception"
+prix_base = 15000
+statut = "disponible"
+apercu_gratuit = ["l01"]
+promesse = "Organise ton code en objets et fais évoluer ton projet sans le casser."
+pour_qui = "Toute personne ayant terminé P01 ou connaissant les bases (fonctions, fichiers, exceptions)."
+
+[parcours.p03]
+titre_court = "Python Avancé"
+prix_base = 20000
+statut = "bientot"
+apercu_gratuit = ["01_typing_et_structures_de_donnees"]
+promesse = "Écris du Python typé, rapide, testé et prêt pour la production."
+pour_qui = "Personnes ayant terminé P01 et P02."

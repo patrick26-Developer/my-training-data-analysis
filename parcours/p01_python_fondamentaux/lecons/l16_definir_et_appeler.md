@@ -2,6 +2,10 @@
 
 ⏱ 60 min · 🎯 Débutant · 📦 Prérequis : module 4
 
+<!-- cadre:debut -->
+> 🔥 **Pourquoi tu vas aimer cette leçon** — Écris une fois, utilise cent fois : les fonctions vont transformer ton code en briques réutilisables.
+<!-- /cadre:debut -->
+
 ## 🎯 Ce que tu sauras faire
 
 - Écrire une fonction avec `def`, des paramètres et `return`
@@ -178,3 +182,15 @@ pytest parcours/p01_python_fondamentaux/exercices/test_ex16_definir_et_appeler.p
 4. Parce qu'on peut réutiliser le résultat (le stocker, le tester, le combiner), alors qu'un `print` ne fait qu'afficher.
 
 </details>
+
+<!-- cadre:fin -->
+---
+
+## 🎉 Bravo !
+
+Tu écris tes premières fonctions : tu ne copieras plus jamais le même code deux fois.
+
+💬 *Bloqué(e) ? C'est normal et ça fait partie de l'apprentissage. Relis la section « Pièges courants », refais l'exemple en le tapant toi-même, puis demande de l'aide dans la communauté.*
+
+**Prochaine étape :** [Leçon 5.2 — Paramètres : défauts, mots-clés, `*args`, `**kwargs`](l17_parametres.md).
+<!-- /cadre:fin -->

@@ -2,6 +2,10 @@
 
 ⏱ 70 min · 🎯 Intermédiaire · 📦 Prérequis : modules 3 à 5
 
+<!-- cadre:debut -->
+> 🔥 **Pourquoi tu vas aimer cette leçon** — Comment trouver un nom parmi dix millions en 24 étapes seulement ? C'est la magie des algorithmes.
+<!-- /cadre:debut -->
+
 ## 🎯 Ce que tu sauras faire
 
 - Expliquer ce qu'est un **algorithme** et comment on le décrit
@@ -216,3 +220,15 @@ pytest parcours/p01_python_fondamentaux/exercices/test_ex31_algorithmes_classiqu
 4. Elle doit être triée.
 
 </details>
+
+<!-- cadre:fin -->
+---
+
+## 🎉 Bravo !
+
+Le module 8 est terminé. Tu as compris que la qualité d'un algorithme se mesure en ordres de grandeur — un vrai réflexe d'ingénieur.
+
+💬 *Bloqué(e) ? C'est normal et ça fait partie de l'apprentissage. Relis la section « Pièges courants », refais l'exemple en le tapant toi-même, puis demande de l'aide dans la communauté.*
+
+**Prochaine étape :** [Leçon 9.1 — Dessiner avec `turtle`](l32_turtle.md).
+<!-- /cadre:fin -->

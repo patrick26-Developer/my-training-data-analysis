@@ -2,6 +2,10 @@
 
 ⏱ 55 min · 🎯 Intermédiaire · 📦 Prérequis : leçons 5.1 et 5.2
 
+<!-- cadre:debut -->
+> 🔥 **Pourquoi tu vas aimer cette leçon** — Pourquoi une variable disparaît-elle parfois ? Et comment une fonction peut-elle s'appeler elle-même ? Deux idées fascinantes.
+<!-- /cadre:debut -->
+
 ## 🎯 Ce que tu sauras faire
 
 - Expliquer où vit une variable (portée locale et globale)
@@ -203,3 +207,15 @@ pytest parcours/p01_python_fondamentaux/exercices/test_ex18_portee_et_recursivit
 4. Il recalcule plusieurs fois les mêmes valeurs.
 
 </details>
+
+<!-- cadre:fin -->
+---
+
+## 🎉 Bravo !
+
+Tu comprends la portée des variables et la récursivité : tu as dépassé le niveau de beaucoup de débutants.
+
+💬 *Bloqué(e) ? C'est normal et ça fait partie de l'apprentissage. Relis la section « Pièges courants », refais l'exemple en le tapant toi-même, puis demande de l'aide dans la communauté.*
+
+**Prochaine étape :** [Leçon 5.4 — Les fonctions sont des valeurs](l19_fonctions_comme_valeurs.md).
+<!-- /cadre:fin -->

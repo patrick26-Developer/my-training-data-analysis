@@ -2,6 +2,10 @@
 
 ⏱ 60 min · 🎯 Intermédiaire · 📦 Prérequis : leçon 10.1
 
+<!-- cadre:debut -->
+> 🔥 **Pourquoi tu vas aimer cette leçon** — Une fois écrits, tes tests te protègent pour toujours : tu vas apprendre à écrire le test avant le code.
+<!-- /cadre:debut -->
+
 ## 🎯 Ce que tu sauras faire
 
 - Écrire des tests avec `assert` et `pytest`
@@ -196,3 +200,15 @@ pytest parcours/p01_python_fondamentaux/exercices/test_ex37_premiers_tests.py -v
 4. Cas normaux, cas limites, cas d'erreur.
 
 </details>
+
+<!-- cadre:fin -->
+---
+
+## 🎉 Bravo !
+
+Tu écris maintenant tes propres tests. Ton code est protégé contre les mauvaises surprises.
+
+💬 *Bloqué(e) ? C'est normal et ça fait partie de l'apprentissage. Relis la section « Pièges courants », refais l'exemple en le tapant toi-même, puis demande de l'aide dans la communauté.*
+
+**Prochaine étape :** [Leçon 10.3 — Le style : PEP 8 et outils de qualité](l38_style_pep8.md).
+<!-- /cadre:fin -->

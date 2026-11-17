@@ -2,6 +2,10 @@
 
 ⏱ 45 min · 🎯 Débutant · 📦 Prérequis : aucun
 
+<!-- cadre:debut -->
+> 🔥 **Pourquoi tu vas aimer cette leçon** — Dans 45 minutes, tu auras écrit et lancé ton tout premier programme, et tu sauras lire un message d'erreur sans paniquer.
+<!-- /cadre:debut -->
+
 ## 🎯 Ce que tu sauras faire
 
 - Expliquer ce qu'est un programme et ce que fait Python
@@ -215,3 +219,15 @@ pytest parcours/p01_python_fondamentaux/exercices/test_ex01_premiers_pas.py -v
 5. Elle définit quelles lignes appartiennent à un même bloc (par exemple le corps d'une fonction).
 
 </details>
+
+<!-- cadre:fin -->
+---
+
+## 🎉 Bravo !
+
+Tu viens d'écrire et d'exécuter ton premier programme. Tous les développeurs du monde ont commencé exactement comme toi, par un simple « Mbote ».
+
+💬 *Bloqué(e) ? C'est normal et ça fait partie de l'apprentissage. Relis la section « Pièges courants », refais l'exemple en le tapant toi-même, puis demande de l'aide dans la communauté.*
+
+**Prochaine étape :** [Leçon 1.2 — Variables et nombres](l02_variables_et_nombres.md).
+<!-- /cadre:fin -->

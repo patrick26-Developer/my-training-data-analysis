@@ -2,6 +2,10 @@
 
 ⏱ 55 min · 🎯 Intermédiaire · 📦 Prérequis : leçons 5.1 à 5.3
 
+<!-- cadre:debut -->
+> 🔥 **Pourquoi tu vas aimer cette leçon** — Passer une fonction à une autre fonction : une idée qui change la façon de programmer, et qui ouvre la porte aux frameworks.
+<!-- /cadre:debut -->
+
 ## 🎯 Ce que tu sauras faire
 
 - Passer une fonction en argument d'une autre fonction
@@ -179,3 +183,15 @@ de dictionnaires. Solution : [`../projets/m5_caisse_en_fonctions.py`](../projets
 4. Une fonction intérieure qui garde l'accès aux variables de la fonction qui l'a créée.
 
 </details>
+
+<!-- cadre:fin -->
+---
+
+## 🎉 Bravo !
+
+Le module 5 est terminé. Tu manipules les fonctions comme des valeurs : c'est le chemin vers le niveau avancé.
+
+💬 *Bloqué(e) ? C'est normal et ça fait partie de l'apprentissage. Relis la section « Pièges courants », refais l'exemple en le tapant toi-même, puis demande de l'aide dans la communauté.*
+
+**Prochaine étape :** [Leçon 6.1 — Les exceptions : gérer les erreurs](l20_exceptions.md).
+<!-- /cadre:fin -->

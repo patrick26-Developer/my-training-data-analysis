@@ -2,6 +2,10 @@
 
 ⏱ 50 min · 🎯 Débutant+ · 📦 Prérequis : leçon 5.1
 
+<!-- cadre:debut -->
+> 🔥 **Pourquoi tu vas aimer cette leçon** — Des fonctions souples, qui s'adaptent : valeurs par défaut, arguments nommés et nombre variable d'arguments.
+<!-- /cadre:debut -->
+
 ## 🎯 Ce que tu sauras faire
 
 - Donner une **valeur par défaut** à un paramètre
@@ -160,3 +164,15 @@ pytest parcours/p01_python_fondamentaux/exercices/test_ex17_parametres.py -v
 4. `f(*L)`
 
 </details>
+
+<!-- cadre:fin -->
+---
+
+## 🎉 Bravo !
+
+Tes fonctions sont désormais flexibles et lisibles. Tu connais même le piège classique de `liste=[]` !
+
+💬 *Bloqué(e) ? C'est normal et ça fait partie de l'apprentissage. Relis la section « Pièges courants », refais l'exemple en le tapant toi-même, puis demande de l'aide dans la communauté.*
+
+**Prochaine étape :** [Leçon 5.3 — Portée des variables et récursivité](l18_portee_et_recursivite.md).
+<!-- /cadre:fin -->

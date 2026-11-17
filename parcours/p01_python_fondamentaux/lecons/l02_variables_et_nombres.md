@@ -2,6 +2,10 @@
 
 ⏱ 60 min · 🎯 Débutant · 📦 Prérequis : leçon 1.1
 
+<!-- cadre:debut -->
+> 🔥 **Pourquoi tu vas aimer cette leçon** — À la fin de cette leçon, ton ordinateur calculera une facture à ta place — sans jamais se tromper dans les additions de Mama Nzoni.
+<!-- /cadre:debut -->
+
 ## 🎯 Ce que tu sauras faire
 
 - Stocker une information dans une **variable** et la réutiliser
@@ -203,3 +207,15 @@ pytest parcours/p01_python_fondamentaux/exercices/test_ex02_variables_et_nombres
 5. `2.7`. Essaie ensuite `round(2.675, 2)` : tu obtiens `2.67` et non `2.68`, à cause de l'imprécision des décimaux.
 
 </details>
+
+<!-- cadre:fin -->
+---
+
+## 🎉 Bravo !
+
+Tu sais maintenant mémoriser des valeurs et faire des calculs. C'est le socle de tout ce qui va suivre.
+
+💬 *Bloqué(e) ? C'est normal et ça fait partie de l'apprentissage. Relis la section « Pièges courants », refais l'exemple en le tapant toi-même, puis demande de l'aide dans la communauté.*
+
+**Prochaine étape :** [Leçon 1.3 — Le texte (chaînes de caractères)](l03_le_texte.md).
+<!-- /cadre:fin -->

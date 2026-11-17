@@ -2,6 +2,10 @@
 
 ⏱ 60 min · 🎯 Débutant · 📦 Prérequis : leçon 2.1
 
+<!-- cadre:debut -->
+> 🔥 **Pourquoi tu vas aimer cette leçon** — Cette leçon donne à ton programme un cerveau : il va réagir différemment selon la situation, comme le ferait un vrai commerçant.
+<!-- /cadre:debut -->
+
 ## 🎯 Ce que tu sauras faire
 
 - Exécuter du code **seulement si** une condition est vraie
@@ -184,3 +188,15 @@ pytest parcours/p01_python_fondamentaux/exercices/test_ex06_if_elif_else.py -v
 4. `m = a if a > b else b`
 
 </details>
+
+<!-- cadre:fin -->
+---
+
+## 🎉 Bravo !
+
+Ton programme sait choisir ! Remises, mentions, tarifs : tu peux maintenant traduire des règles de la vie réelle en code.
+
+💬 *Bloqué(e) ? C'est normal et ça fait partie de l'apprentissage. Relis la section « Pièges courants », refais l'exemple en le tapant toi-même, puis demande de l'aide dans la communauté.*
+
+**Prochaine étape :** [Leçon 2.3 — `match` : choisir parmi plusieurs valeurs](l07_match.md).
+<!-- /cadre:fin -->

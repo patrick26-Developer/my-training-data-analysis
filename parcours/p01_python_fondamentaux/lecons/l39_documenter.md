@@ -2,6 +2,10 @@
 
 ⏱ 45 min · 🎯 Intermédiaire · 📦 Prérequis : leçon 10.3
 
+<!-- cadre:debut -->
+> 🔥 **Pourquoi tu vas aimer cette leçon** — Ton futur toi, et tes collègues, te remercieront : tu vas apprendre à documenter ton code pour qu'il se comprenne tout seul.
+<!-- /cadre:debut -->
+
 ## 🎯 Ce que tu sauras faire
 
 - Écrire de bonnes **docstrings** (fonctions, modules)
@@ -191,3 +195,15 @@ pytest parcours/p01_python_fondamentaux/exercices/test_ex39_documenter.py -v
 4. Avec `doctest`, l'exemple est exécuté : s'il devient faux, un test échoue.
 
 </details>
+
+<!-- cadre:fin -->
+---
+
+## 🎉 Bravo !
+
+Le module 10 est terminé. Ton code est testé, propre et documenté. Il est prêt à être partagé.
+
+💬 *Bloqué(e) ? C'est normal et ça fait partie de l'apprentissage. Relis la section « Pièges courants », refais l'exemple en le tapant toi-même, puis demande de l'aide dans la communauté.*
+
+**Prochaine étape :** [Projet de synthèse — Gestion de boutique en console](l40_projet_de_synthese.md).
+<!-- /cadre:fin -->

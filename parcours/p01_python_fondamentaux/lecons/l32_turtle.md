@@ -2,6 +2,10 @@
 
 ⏱ 50 min · 🎯 Débutant · 📦 Prérequis : modules 3 et 5
 
+<!-- cadre:debut -->
+> 🔥 **Pourquoi tu vas aimer cette leçon** — Une tortue, un crayon, et quelques lignes de code : tu vas dessiner des formes et des motifs qui s'affichent à l'écran.
+<!-- /cadre:debut -->
+
 ## 🎯 Ce que tu sauras faire
 
 - Dessiner des formes avec la **tortue** de Python
@@ -170,3 +174,15 @@ Défi libre (sans test) : dessine ton drapeau, une maison, une fleur, ou une ros
 4. `turtle` : degrés ; `math.cos` : radians.
 
 </details>
+
+<!-- cadre:fin -->
+---
+
+## 🎉 Bravo !
+
+Tu as vu à quel point un dessin n'est qu'un calcul de points. Cela te servira dans les jeux et les graphiques.
+
+💬 *Bloqué(e) ? C'est normal et ça fait partie de l'apprentissage. Relis la section « Pièges courants », refais l'exemple en le tapant toi-même, puis demande de l'aide dans la communauté.*
+
+**Prochaine étape :** [Leçon 9.2 — Courbes et histogrammes avec `matplotlib`](l33_matplotlib.md).
+<!-- /cadre:fin -->

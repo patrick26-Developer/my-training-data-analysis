@@ -2,6 +2,10 @@
 
 ⏱ 60 min · 🎯 Débutant · 📦 Prérequis : leçons 1.1 à 1.3
 
+<!-- cadre:debut -->
+> 🔥 **Pourquoi tu vas aimer cette leçon** — C'est la leçon où ton programme se met à te parler et à t'écouter : tu vas construire un vrai dialogue avec l'utilisateur.
+<!-- /cadre:debut -->
+
 ## 🎯 Ce que tu sauras faire
 
 - Demander une information à l'utilisateur avec `input()`
@@ -197,3 +201,15 @@ Essaie d'abord seul(e) !
 5. `7,500`
 
 </details>
+
+<!-- cadre:fin -->
+---
+
+## 🎉 Bravo !
+
+Ton programme n'est plus muet : il pose des questions, calcule et présente un reçu. Tu viens de franchir une étape décisive.
+
+💬 *Bloqué(e) ? C'est normal et ça fait partie de l'apprentissage. Relis la section « Pièges courants », refais l'exemple en le tapant toi-même, puis demande de l'aide dans la communauté.*
+
+**Prochaine étape :** [Leçon 2.1 — Booléens et comparaisons](l05_booleens_et_comparaisons.md).
+<!-- /cadre:fin -->

@@ -2,6 +2,10 @@
 
 ⏱ 55 min · 🎯 Intermédiaire · 📦 Prérequis : module 5
 
+<!-- cadre:debut -->
+> 🔥 **Pourquoi tu vas aimer cette leçon** — Un bon programme ne plante pas : il réagit. Tu vas apprendre à gérer l'imprévu avec élégance.
+<!-- /cadre:debut -->
+
 ## 🎯 Ce que tu sauras faire
 
 - Lire une **trace d'erreur** (*traceback*) et en déduire la cause
@@ -124,7 +128,7 @@ class SoldeInsuffisantError(Exception):
     pass
 
 
-raise SoldeInsuffisantError("Il manque 4 000 FCFA")
+raise SoldeInsuffisantError("Il manque 4 000 FCFA")  # l'erreur est levée ici
 ```
 
 (Les classes sont étudiées dans le parcours P02 ; retiens seulement cette forme.)
@@ -184,3 +188,15 @@ pytest parcours/p01_python_fondamentaux/exercices/test_ex20_exceptions.py -v
 4. Il attrape toutes les erreurs, y compris celles qu'on ne prévoyait pas, et masque les vrais bugs.
 
 </details>
+
+<!-- cadre:fin -->
+---
+
+## 🎉 Bravo !
+
+Tes programmes savent maintenant encaisser les erreurs sans plier. C'est ce qui distingue un code amateur d'un code professionnel.
+
+💬 *Bloqué(e) ? C'est normal et ça fait partie de l'apprentissage. Relis la section « Pièges courants », refais l'exemple en le tapant toi-même, puis demande de l'aide dans la communauté.*
+
+**Prochaine étape :** [Leçon 6.2 — Lire et écrire des fichiers](l21_fichiers.md).
+<!-- /cadre:fin -->

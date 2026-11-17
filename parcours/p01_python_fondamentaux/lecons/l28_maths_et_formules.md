@@ -2,6 +2,10 @@
 
 ⏱ 55 min · 🎯 Intermédiaire · 📦 Prérequis : module 7
 
+<!-- cadre:debut -->
+> 🔥 **Pourquoi tu vas aimer cette leçon** — Aires, intérêts, mensualités d'un prêt, équations : tu vas traduire de vraies formules en programmes qui calculent à ta place.
+<!-- /cadre:debut -->
+
 ## 🎯 Ce que tu sauras faire
 
 - Utiliser `math` : racines, puissances, logarithmes, trigonométrie, arrondis
@@ -197,3 +201,15 @@ pytest parcours/p01_python_fondamentaux/exercices/test_ex28_maths_et_formules.py
 4. `-9`.
 
 </details>
+
+<!-- cadre:fin -->
+---
+
+## 🎉 Bravo !
+
+Les mathématiques ne te font plus peur : tu les fais travailler pour toi.
+
+💬 *Bloqué(e) ? C'est normal et ça fait partie de l'apprentissage. Relis la section « Pièges courants », refais l'exemple en le tapant toi-même, puis demande de l'aide dans la communauté.*
+
+**Prochaine étape :** [Leçon 8.2 — Calculs exacts, hasard et statistiques](l29_nombres_exacts_et_statistiques.md).
+<!-- /cadre:fin -->

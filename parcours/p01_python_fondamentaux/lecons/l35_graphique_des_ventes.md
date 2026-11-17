@@ -2,6 +2,10 @@
 
 ⏱ 80 min · 🎯 Intermédiaire · 📦 Prérequis : modules 4, 6 et leçons 9.2–9.3
 
+<!-- cadre:debut -->
+> 🔥 **Pourquoi tu vas aimer cette leçon** — Tu vas bâtir un vrai tableau de bord pour une boutique : lire des ventes, calculer des indicateurs et les afficher en graphiques.
+<!-- /cadre:debut -->
+
 ## 🎯 Ce que tu sauras faire
 
 - Lire des ventes depuis un fichier **CSV**
@@ -155,3 +159,15 @@ pytest parcours/p01_python_fondamentaux/exercices/test_ex35_graphique_des_ventes
 ```
 
 Programme complet de référence : [`../projets/m9_tableau_de_bord.py`](../projets/m9_tableau_de_bord.py).
+
+<!-- cadre:fin -->
+---
+
+## 🎉 Bravo !
+
+Le module 9 est terminé : tu as construit un vrai tableau de bord. C'est exactement ce que font les analystes de données.
+
+💬 *Bloqué(e) ? C'est normal et ça fait partie de l'apprentissage. Relis la section « Pièges courants », refais l'exemple en le tapant toi-même, puis demande de l'aide dans la communauté.*
+
+**Prochaine étape :** [Leçon 10.1 — Déboguer : traquer et corriger les bugs](l36_deboguer.md).
+<!-- /cadre:fin -->

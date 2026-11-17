@@ -10,7 +10,7 @@ Organisation inspirée du système **LMD** (Licence – Master – Doctorat).
 
 | Parcours | Statut |
 |---|---|
-| P01 Python Fondamentaux | 🚧 en rédaction (modules 1 et 2 disponibles) |
+| P01 Python Fondamentaux | ✅ complet (11 modules, 39 leçons, projet de synthèse, examen final) |
 | P03 Python Avancé | 🟡 1 leçon disponible (sera complété après P01 et P02) |
 | Autres parcours | ⏳ planifiés, voir [`docs/CURSUS.md`](docs/CURSUS.md) |
 

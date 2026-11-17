@@ -1,6 +1,6 @@
 # P01 — Python Fondamentaux
 
-**Cycle :** Licence 1 · **Niveau :** débutant complet · **Crédits :** 30 · **Durée :** ≈ 10 semaines à 6 h/semaine
+**Cycle :** Licence 1 · **Niveau :** débutant complet · **Crédits :** 30 · **Statut :** ✅ parcours complet · **Durée :** ≈ 10 semaines à 6 h/semaine
 
 Aucun prérequis : si tu sais allumer un ordinateur, tu peux commencer.
 À la fin, tu écris des programmes console complets, lis et écris des fichiers, gères les erreurs
@@ -20,7 +20,7 @@ et organises ton code en fonctions et modules.
 | M8 | Maths et algorithmique | 8.1 Module `math` et formules (aire, intérêts, pourcentages) · 8.2 `statistics`, `random`, `decimal`, `fractions` · 8.3 Tableaux à 2 dimensions (listes de listes, matrices) · 8.4 Algorithmes classiques (recherche, tri, suite de Fibonacci, nombres premiers) | ✅ terminé |
 | M9 | Premiers graphiques | 9.1 Dessiner avec `turtle` · 9.2 Courbes et histogrammes avec `matplotlib` · 9.3 Représenter une fonction mathématique · 9.4 Graphique des ventes d'une boutique | ✅ terminé |
 | M10 | Écrire du bon code | 10.1 Déboguer · 10.2 Premiers tests · 10.3 Style PEP 8 · 10.4 Documenter | ✅ terminé |
-| M11 | Projets | Mini-projets de chaque module + **projet de synthèse : gestion de boutique en console** | ⏳ |
+| M11 | Évaluation finale | [Projet de synthèse : gestion de boutique](lecons/l40_projet_de_synthese.md) · [Examen final](examen_final.md) | ✅ terminé |
 
 ## Comment travailler une leçon
 

@@ -50,3 +50,5 @@ Thumbs.db
 *.log
 parcours/**/carnet.json
 parcours/**/tableau_de_bord.png
+parcours/**/boutique.json
+parcours/**/synthese_boutique/ventes.csv

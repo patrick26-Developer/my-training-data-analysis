@@ -11,6 +11,7 @@ Organisation inspirée du système **LMD** (Licence – Master – Doctorat).
 | Parcours | Statut |
 |---|---|
 | P01 Python Fondamentaux | ✅ complet (11 modules, 39 leçons, projet de synthèse, examen final) |
+| P02 POO et conception | ✅ contenu livré : [6 modules, exercices, boutique et examen](parcours/p02_poo_et_conception/README.md) |
 | P03 Python Avancé | 🟡 1 leçon disponible (sera complété après P01 et P02) |
 | Autres parcours | ⏳ planifiés, voir [`docs/CURSUS.md`](docs/CURSUS.md) |
 
@@ -29,6 +30,7 @@ Principe : **un parcours est terminé complètement avant d'ouvrir le suivant.**
 ├── docs/                          Documentation du projet
 └── parcours/
     ├── p01_python_fondamentaux/
+    ├── p02_poo_et_conception/
     ├── p03_python_avance/
     └── pNN_.../                   (créés au fur et à mesure)
         ├── README.md              Plan du parcours
@@ -61,4 +63,11 @@ pytest parcours/p01_python_fondamentaux/exercices/test_ex01_premiers_pas.py -v
 
 ## Qualité de code
 
-`ruff check .`, `ruff format .`, `mypy` et `pytest` doivent passer avant chaque commit.
+`ruff check .`, `ruff format --check .` et `pytest` doivent passer avant chaque commit.
+Le typage strict porte sur le code typé publié, pas sur les squelettes incomplets :
+`mypy parcours/p03_python_avance/solutions/sol01_typing_et_structures_de_donnees.py`.
+P01 et P02 sont exclus de mypy : les annotations avancées sont enseignées en P03.
+
+P01 et P02 sont validés techniquement ; relecture humaine et essais avec de vrais
+débutants restent à réaliser. Les certificats sont pour l'instant des règles de
+validation : le site, les comptes et le paiement sont à construire.

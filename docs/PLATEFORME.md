@@ -35,7 +35,15 @@
 | Phase | Livrable |
 |---|---|
 | 0 | Restructuration, dépendances, modèle de leçon ✅ |
-| 1 | Parcours P01 complet |
-| 2 | Site v1 : lecture + exécution Pyodide de P01 |
-| 3 | P02 et P03, comptes, certificats, paiement |
+| 1 | Parcours P01 complet ✅ (validation technique ; relecture pédagogique à faire) |
+| 2 | P02 : POO et conception, puis P03 une fois P02 terminé |
+| 3 | Site v1 : lecture + exécution Pyodide de P01, puis comptes, certificats et paiement |
 | 4+ | Un parcours à la fois (P04 → P12) |
+
+## État réel et validation
+
+P02 dispose de six modules, exercices, corrigés, boutique console avec stockage et examen final.
+La validation technique du contenu est effectuée ; P03 reste le prochain parcours à compléter.
+Les contenus demandent encore une relecture humaine et des essais avec des débutants.
+Les tests automatiques ne jugent pas seuls la conception ni la documentation.
+Les comptes, paiements et certificats vérifiables décrits ici sont des fonctionnalités prévues.

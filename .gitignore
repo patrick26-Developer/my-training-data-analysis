@@ -52,3 +52,6 @@ parcours/**/carnet.json
 parcours/**/tableau_de_bord.png
 parcours/**/boutique.json
 parcours/**/synthese_boutique/ventes.csv
+
+# Dossiers temporaires de tests locaux
+.pytest_tmp*/

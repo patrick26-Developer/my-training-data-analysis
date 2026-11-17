@@ -1,7 +1,31 @@
 {
-  "devise": "XAF",
-  "duree_acces_mois": 12,
   "avertissement": "Prix de départ à valider par l'auteur avant toute mise en vente.",
+  "strategie": "Volume : prix bas et identiques pour tous, ajustables selon l'effectif des utilisateurs.",
+  "devise_reference": "XAF",
+  "fourchette_prix_xaf": {
+    "plancher": 1000,
+    "plafond": 5000
+  },
+  "devises_affichees": [
+    "XAF",
+    "EUR",
+    "USD"
+  ],
+  "taux": {
+    "eur_xaf": 655.957,
+    "usd_pour_1_eur": 1.1
+  },
+  "duree_acces_mois": 0,
+  "lancement": {
+    "gratuit_mois": 2,
+    "gratuit_jours": 0,
+    "telechargements_gratuits": true,
+    "date_ouverture": null,
+    "date_debut_premium": null,
+    "date_annonce_premium": null,
+    "phase_actuelle": "a_definir"
+  },
+  "differencier_par_public": false,
   "publics": {
     "particulier": {
       "libelle": "Particulier",
@@ -11,33 +35,33 @@
     },
     "eleve": {
       "libelle": "Élève (collège, lycée)",
-      "coefficient": 0.4,
+      "coefficient": 0.5,
       "justificatif": "carte scolaire ou attestation de scolarité de l'année en cours",
-      "description": "Tarif très réduit pour les élèves."
+      "description": "Tarif réduit pour les élèves."
     },
     "etudiant": {
       "libelle": "Étudiant",
-      "coefficient": 0.6,
+      "coefficient": 0.75,
       "justificatif": "carte d'étudiant ou certificat d'inscription de l'année en cours",
-      "description": "Tarif étudiant (université, institut, centre de formation)."
+      "description": "Tarif étudiant."
     },
     "enseignant": {
       "libelle": "Enseignant",
-      "coefficient": 0.6,
-      "justificatif": "attestation de l'établissement ou carte professionnelle",
-      "description": "Pour préparer ses propres cours. Accès personnel."
+      "coefficient": 0.75,
+      "justificatif": "attestation de l'établissement",
+      "description": "Accès personnel pour préparer ses cours."
     },
     "formateur": {
       "libelle": "Formateur indépendant",
-      "coefficient": 0.8,
-      "justificatif": "déclaration d'activité ou pièce d'identité professionnelle",
-      "description": "Accès personnel pour se former et préparer ses séances. Ne donne pas le droit de revendre le contenu."
+      "coefficient": 0.75,
+      "justificatif": "déclaration d'activité",
+      "description": "Accès personnel ; ne donne pas le droit de revendre le contenu."
     },
     "demandeur_emploi": {
       "libelle": "Demandeur d'emploi / reconversion",
       "coefficient": 0.5,
-      "justificatif": "attestation d'inscription ou déclaration sur l'honneur",
-      "description": "Soutien à la reconversion professionnelle."
+      "justificatif": "attestation ou déclaration sur l'honneur",
+      "description": "Soutien à la reconversion."
     }
   },
   "parcours": [
@@ -61,22 +85,13 @@
         "l03",
         "l04"
       ],
-      "prix_base": 12000,
+      "prix_base": 2000,
       "prix": {
-        "particulier": 12000,
-        "eleve": 5000,
-        "etudiant": 7000,
-        "enseignant": 7000,
-        "formateur": 9500,
-        "demandeur_emploi": 6000
-      },
-      "prix_eur_indicatif": {
-        "particulier": 18.29,
-        "eleve": 7.62,
-        "etudiant": 10.67,
-        "enseignant": 10.67,
-        "formateur": 14.48,
-        "demandeur_emploi": 9.15
+        "tous": {
+          "XAF": 2000,
+          "EUR": 3.0,
+          "USD": 3.5
+        }
       }
     },
     {
@@ -92,26 +107,17 @@
       "modules": 0,
       "lecons": 6,
       "exercices": 6,
-      "duree_estimee_heures": null,
+      "duree_estimee_heures": 6.5,
       "apercu_gratuit": [
         "l01"
       ],
-      "prix_base": 15000,
+      "prix_base": 3000,
       "prix": {
-        "particulier": 15000,
-        "eleve": 6000,
-        "etudiant": 9000,
-        "enseignant": 9000,
-        "formateur": 12000,
-        "demandeur_emploi": 7500
-      },
-      "prix_eur_indicatif": {
-        "particulier": 22.87,
-        "eleve": 9.15,
-        "etudiant": 13.72,
-        "enseignant": 13.72,
-        "formateur": 18.29,
-        "demandeur_emploi": 11.43
+        "tous": {
+          "XAF": 3000,
+          "EUR": 4.5,
+          "USD": 5.0
+        }
       }
     },
     {
@@ -131,22 +137,13 @@
       "apercu_gratuit": [
         "01_typing_et_structures_de_donnees"
       ],
-      "prix_base": 20000,
+      "prix_base": 4000,
       "prix": {
-        "particulier": 20000,
-        "eleve": 8000,
-        "etudiant": 12000,
-        "enseignant": 12000,
-        "formateur": 16000,
-        "demandeur_emploi": 10000
-      },
-      "prix_eur_indicatif": {
-        "particulier": 30.49,
-        "eleve": 12.2,
-        "etudiant": 18.29,
-        "enseignant": 18.29,
-        "formateur": 24.39,
-        "demandeur_emploi": 15.24
+        "tous": {
+          "XAF": 4000,
+          "EUR": 6.0,
+          "USD": 6.5
+        }
       }
     }
   ],
@@ -154,7 +151,7 @@
     "entreprise": {
       "libelle": "Entreprise / équipe",
       "minimum_places": 3,
-      "justificatif": "raison sociale + NIU/RCCM, facture sur demande",
+      "justificatif": "raison sociale + facture sur demande",
       "paliers": [
         {
           "a_partir_de": 3,
@@ -177,55 +174,103 @@
         "p01": [
           {
             "a_partir_de": 3,
-            "prix": 18000
+            "prix": {
+              "XAF": 2000,
+              "EUR": 3.0,
+              "USD": 3.5
+            }
           },
           {
             "a_partir_de": 10,
-            "prix": 16000
+            "prix": {
+              "XAF": 2000,
+              "EUR": 3.0,
+              "USD": 3.5
+            }
           },
           {
             "a_partir_de": 25,
-            "prix": 14500
+            "prix": {
+              "XAF": 1500,
+              "EUR": 2.5,
+              "USD": 2.5
+            }
           },
           {
             "a_partir_de": 50,
-            "prix": 12500
+            "prix": {
+              "XAF": 1500,
+              "EUR": 2.5,
+              "USD": 2.5
+            }
           }
         ],
         "p02": [
           {
             "a_partir_de": 3,
-            "prix": 22500
+            "prix": {
+              "XAF": 3000,
+              "EUR": 4.5,
+              "USD": 5.0
+            }
           },
           {
             "a_partir_de": 10,
-            "prix": 20000
+            "prix": {
+              "XAF": 2500,
+              "EUR": 4.0,
+              "USD": 4.0
+            }
           },
           {
             "a_partir_de": 25,
-            "prix": 18000
+            "prix": {
+              "XAF": 2500,
+              "EUR": 4.0,
+              "USD": 4.0
+            }
           },
           {
             "a_partir_de": 50,
-            "prix": 15500
+            "prix": {
+              "XAF": 2000,
+              "EUR": 3.0,
+              "USD": 3.5
+            }
           }
         ],
         "p03": [
           {
             "a_partir_de": 3,
-            "prix": 30000
+            "prix": {
+              "XAF": 4000,
+              "EUR": 6.0,
+              "USD": 6.5
+            }
           },
           {
             "a_partir_de": 10,
-            "prix": 27000
+            "prix": {
+              "XAF": 3500,
+              "EUR": 5.5,
+              "USD": 6.0
+            }
           },
           {
             "a_partir_de": 25,
-            "prix": 24000
+            "prix": {
+              "XAF": 3000,
+              "EUR": 4.5,
+              "USD": 5.0
+            }
           },
           {
             "a_partir_de": 50,
-            "prix": 21000
+            "prix": {
+              "XAF": 3000,
+              "EUR": 4.5,
+              "USD": 5.0
+            }
           }
         ]
       }
@@ -252,43 +297,79 @@
         "p01": [
           {
             "a_partir_de": 20,
-            "prix": 4000
+            "prix": {
+              "XAF": 1000,
+              "EUR": 1.5,
+              "USD": 1.5
+            }
           },
           {
             "a_partir_de": 50,
-            "prix": 4000
+            "prix": {
+              "XAF": 1000,
+              "EUR": 1.5,
+              "USD": 1.5
+            }
           },
           {
             "a_partir_de": 100,
-            "prix": 3500
+            "prix": {
+              "XAF": 1000,
+              "EUR": 1.5,
+              "USD": 1.5
+            }
           }
         ],
         "p02": [
           {
             "a_partir_de": 20,
-            "prix": 5000
+            "prix": {
+              "XAF": 1500,
+              "EUR": 2.5,
+              "USD": 2.5
+            }
           },
           {
             "a_partir_de": 50,
-            "prix": 4500
+            "prix": {
+              "XAF": 1500,
+              "EUR": 2.5,
+              "USD": 2.5
+            }
           },
           {
             "a_partir_de": 100,
-            "prix": 4000
+            "prix": {
+              "XAF": 1000,
+              "EUR": 1.5,
+              "USD": 1.5
+            }
           }
         ],
         "p03": [
           {
             "a_partir_de": 20,
-            "prix": 7000
+            "prix": {
+              "XAF": 2000,
+              "EUR": 3.0,
+              "USD": 3.5
+            }
           },
           {
             "a_partir_de": 50,
-            "prix": 6500
+            "prix": {
+              "XAF": 2000,
+              "EUR": 3.0,
+              "USD": 3.5
+            }
           },
           {
             "a_partir_de": 100,
-            "prix": 5500
+            "prix": {
+              "XAF": 1500,
+              "EUR": 2.5,
+              "USD": 2.5
+            }
           }
         ]
       }
@@ -304,21 +385,11 @@
       ],
       "remise": 0.15,
       "prix": {
-        "particulier": 23000,
-        "eleve": 9500,
-        "etudiant": 13500,
-        "enseignant": 13500,
-        "formateur": 18500,
-        "demandeur_emploi": 11500
+        "XAF": 4000,
+        "EUR": 6.0,
+        "USD": 6.5
       },
-      "economie": {
-        "particulier": 4000,
-        "eleve": 1500,
-        "etudiant": 2500,
-        "enseignant": 2500,
-        "formateur": 3000,
-        "demandeur_emploi": 2000
-      }
+      "economie_xaf": 1000
     },
     {
       "id": "licence-complete",
@@ -330,21 +401,11 @@
       ],
       "remise": 0.2,
       "prix": {
-        "particulier": 37500,
-        "eleve": 15000,
-        "etudiant": 22500,
-        "enseignant": 22500,
-        "formateur": 30000,
-        "demandeur_emploi": 19000
+        "XAF": 7000,
+        "EUR": 10.5,
+        "USD": 11.5
       },
-      "economie": {
-        "particulier": 9500,
-        "eleve": 4000,
-        "etudiant": 5500,
-        "enseignant": 5500,
-        "formateur": 7500,
-        "demandeur_emploi": 4500
-      }
+      "economie_xaf": 2000
     }
   ]
 }

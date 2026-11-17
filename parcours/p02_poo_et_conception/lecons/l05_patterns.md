@@ -1,22 +1,58 @@
 # Leçon 5.1 — Stratégie et injection de dépendance
 
-⏱ Durée : 60 min · 🎯 Niveau : Débutant → Intermédiaire · 📦 Prérequis : leçon 4.1
+⏱ 60 min · 🎯 Débutant → Intermédiaire · 📦 Prérequis : leçon 4.1
+
+<!-- cadre:debut -->
+> 🔥 **Pourquoi tu vas aimer cette leçon** — Soldes de rentrée, promo du week-end, remise fidélité : tu vas apprendre à changer la règle de calcul **en une ligne**, sans toucher à la caisse. C'est le genre de conception qui évite les nuits blanches avant chaque promotion.
+<!-- /cadre:debut -->
 
 ## 🎯 Ce que tu sauras faire
 
-- Déléguer une règle variable.
-- Injecter un objet dans un constructeur.
-- Tester une caisse avec une politique de remplacement.
+- **Déléguer** une règle qui change à un objet remplaçable (le pattern « Stratégie »)
+- **Injecter** cet objet dans une classe par son constructeur
+- Tester une caisse avec une règle de **remplacement** simple et prévisible
+- Savoir quand une simple fonction suffit
 
-## 1. Le problème (accroche)
+---
 
-Modifier la caisse à chaque nouvelle promotion fragilise les ventes. Comment changer la règle sans réécrire le calcul de la caisse ?
+## 1. Le problème
 
-## 2. L’idée en images
+Chaque promotion oblige à rouvrir le code de la caisse :
 
-Un pattern est une solution récurrente à un problème de conception. Stratégie signifie confier un calcul variable à un objet remplaçable. L’injection consiste à fournir cet objet depuis l’extérieur.
+```python
+def total(montant, promotion):
+    if promotion == "rentree":
+        return montant * 0.9
+    elif promotion == "weekend":
+        return montant - 500
+    elif promotion == "fidelite":
+        ...
+```
 
-## 3. Explication pas à pas
+À chaque nouvelle règle : un `elif` de plus, un risque de plus de casser les anciennes. La caisse est fragilisée
+par des changements qui ne la concernent pas. Comment **changer la règle sans réécrire le calcul de la caisse** ?
+
+## 2. L'idée en images
+
+Un **pattern** (patron de conception) est une solution éprouvée à un problème qui revient souvent. Ici :
+
+- **Stratégie** : on confie la règle variable (la remise) à un **objet séparé** qui peut être remplacé.
+- **Injection de dépendance** : au lieu que la caisse *fabrique* elle-même sa règle, on la lui **donne** de
+  l'extérieur, à la construction.
+
+```
+   code qui assemble                  la caisse (stable)
+ ┌─────────────────────┐          ┌──────────────────────────┐
+ │ Caisse(RemiseFixe(500)) ─────► │ total(montant)           │
+ └─────────────────────┘          │   → politique.calculer() │
+                                    └──────────────────────────┘
+```
+
+La caisse ne change jamais. C'est l'assembleur (par exemple `main.py`) qui décide de la règle.
+
+## 3. Pas à pas
+
+### Étape 1 — Une caisse qui reçoit sa règle
 
 ```python
 class SansRemise:
@@ -36,13 +72,87 @@ caisse = Caisse(SansRemise())
 print(caisse.total(20000))  # 20000
 ```
 
-Le constructeur reçoit la politique au lieu de la créer. total lui délègue le calcul de la remise. Un test peut fournir une petite politique prévisible. Le projet ajoute ensuite le stock et le journal. Une fonction passée en paramètre serait suffisante si la règle ne nécessite aucun état : les classes restent un choix à justifier.
+- Le constructeur **reçoit** la politique au lieu de la créer : c'est l'injection.
+- `total` **délègue** le calcul de la remise à la politique, puis soustrait.
+
+### Étape 2 — Changer de règle sans toucher à la caisse
+
+```python
+class RemiseFixe:
+    def __init__(self, montant):
+        self.montant = montant
+
+    def calculer(self, sous_total):
+        return min(self.montant, sous_total)  # jamais plus que le total
+
+
+caisse_promo = Caisse(RemiseFixe(500))
+print(caisse_promo.total(20000))  # 19500
+print(caisse_promo.total(300))  # 0   (la remise est plafonnée au sous-total)
+```
+
+Nouvelle promotion = **nouvelle classe**, et la classe `Caisse` reste exactement la même. Aucun risque de casser
+les anciennes règles.
+
+### Étape 3 — Une règle de remplacement pour tester
+
+Pour vérifier que la caisse fonctionne, on n'a pas besoin des vraies règles compliquées : on fabrique une
+règle **minuscule et prévisible**.
+
+```python
+class RemiseDeTest:
+    def calculer(self, montant):
+        return 100
+
+
+caisse_test = Caisse(RemiseDeTest())
+assert caisse_test.total(1000) == 900
+```
+
+L'injection rend les tests **simples et rapides** : on remplace une dépendance par un « double » de test.
+
+### Étape 4 — Se protéger d'une règle défaillante
+
+Une stratégie peut se tromper (une remise supérieure au montant, par exemple). La caisse doit donc **vérifier
+le résultat de son collaborateur** :
+
+```python
+class Caisse:
+    def __init__(self, politique):
+        self.politique = politique
+
+    def total(self, montant):
+        remise = self.politique.calculer(montant)
+        if not 0 <= remise <= montant:
+            raise ValueError("Remise invalide.")
+        return montant - remise
+```
+
+Et surtout : **valider avant de modifier quoi que ce soit** (comme le stock dans le projet). Si la remise est
+invalide, rien ne doit avoir bougé.
+
+### Étape 5 — Une fonction suffit parfois
+
+Si la règle est simple et n'a **pas besoin de mémoriser un état**, une simple fonction fait l'affaire :
+
+```python
+def remise_weekend(montant):
+    return 500
+
+
+def total_avec(montant, regle):
+    return montant - regle(montant)
+
+
+print(total_avec(20000, remise_weekend))  # 19500
+```
+
+Inutile d'inventer des classes dès qu'une fonction convient. Les patterns sont des outils, pas une obligation :
+choisis le plus simple qui fait le travail.
 
 ## 4. ⚠️ Pièges courants
 
-Inventer un framework de patterns pour une seule formule complique la lecture. Une stratégie qui lève une erreur ne doit pas laisser un stock déjà diminué. Valider la remise et préparer la vente avant de modifier le stock.
-
-Exemple autonome : constater le problème, puis le corriger.
+**Une stratégie qui renvoie n'importe quoi**
 
 ```python
 class Politique:
@@ -67,31 +177,57 @@ class PolitiqueCorrigee:
 assert montant - PolitiqueCorrigee().calculer(montant) == 400
 ```
 
+**Autres pièges**
+
+- Construire un « framework de patterns » pour une seule formule : c'est inutilement compliqué.
+- Modifier le stock **avant** d'avoir validé la remise : en cas d'erreur, le stock reste abîmé.
+- Créer la politique **dans** la caisse (`self.politique = RemiseSeuil()`) : on perd la souplesse de l'injection.
+
 ## 5. À retenir
 
-Déléguer une règle variable. Injecter un objet dans un constructeur. Tester une caisse avec une politique de remplacement.
+- **Stratégie** : confier une règle variable à un objet remplaçable.
+- **Injection** : fournir cet objet par le constructeur, depuis l'extérieur.
+- Une règle de **remplacement** simple rend les tests faciles.
+- Valider la remise puis préparer la vente **avant** de modifier le stock.
+- Une simple **fonction** suffit pour une règle sans état.
 
 ## 6. Exercices
 
-Complète les trois tâches dans [le fichier d’exercices](../exercices/ex05_patterns.py).
-Vérifie avec `python -m pytest parcours/p02_poo_et_conception/exercices/test_ex05_patterns.py -v`.
-Puis compare au [corrigé commenté](../solutions/sol05_patterns.py).
+Complète les trois tâches dans [le fichier d'exercices](../exercices/ex05_patterns.py), puis vérifie avec :
+
+```powershell
+python -m pytest parcours/p02_poo_et_conception/exercices/test_ex05_patterns.py -v
+```
+
+Compare ensuite avec le [corrigé commenté](../solutions/sol05_patterns.py).
 
 ## 7. Quiz
 
-1. Qui choisit la stratégie ?
-2. Quel appel utilise la caisse ?
-3. Une fonction peut-elle suffire ?
-4. Quand modifier le stock ?
+1. Qui choisit la stratégie utilisée par la caisse ?
+2. Quel appel la caisse utilise-t-elle sur la politique ?
+3. Une fonction peut-elle suffire à la place d'une classe ?
+4. Quand faut-il modifier le stock ?
 5. Pourquoi tester une stratégie qui échoue ?
 
 <details>
 <summary>Réponses</summary>
 
-1. Le code qui construit la caisse.
-2. politique.calculer(montant).
-3. Oui, pour une règle simple.
-4. Après les validations et la préparation de la vente.
-5. Pour vérifier l’absence de modification partielle.
+1. Le code qui construit la caisse (l'assembleur), pas la caisse elle-même.
+2. `politique.calculer(montant)`.
+3. Oui, pour une règle simple sans état.
+4. Après les validations et la préparation de la vente, jamais avant.
+5. Pour vérifier qu'une erreur ne laisse pas de modification partielle (un stock à moitié modifié).
 
 </details>
+
+<!-- cadre:fin -->
+---
+
+## 🎉 Bravo !
+
+Tu viens de découvrir ton premier pattern de conception. Tu peux désormais faire évoluer un programme sans le fragiliser : une compétence qui distingue les développeurs expérimentés.
+
+💬 *Bloqué(e) ? C'est normal. Écris une `RemiseFidelite` de ton invention et branche-la sur la caisse, sans toucher à `Caisse`.*
+
+**Prochaine étape :** [Leçon 6.1 — Intégrer la boutique](l06_integrer_la_boutique.md).
+<!-- /cadre:fin -->

@@ -13,7 +13,7 @@ En **11 modules** et **39 leçons**, tu passes de « je n'ai jamais programmé �
 gestion de boutique qui fonctionne », avec un guide pas à pas, des exercices corrigés automatiquement et des
 exemples tirés de la vie de tous les jours : marché, boutique, transport, argent mobile.
 
-[ **Commencer gratuitement** — module 1 offert ]   [ Voir le programme ]
+[ **Commencer gratuitement** — tout est gratuit pendant le lancement ]   [ Voir le programme ]
 
 ---
 
@@ -34,7 +34,7 @@ exemples tirés de la vie de tous les jours : marché, boutique, transport, arge
 | **Enseignant ou formateur** | te former et préparer tes propres séances |
 | **Salarié ou entrepreneur** | automatiser tes tâches (calculs, fichiers, rapports) |
 | **En reconversion** | acquérir le socle de la programmation, étape par étape |
-| **Équipe ou entreprise** | former plusieurs collaborateurs avec une licence collective |
+| **Équipe ou entreprise** | former plusieurs collaborateurs (licences collectives à venir) |
 
 ## Comment ça marche
 
@@ -78,19 +78,18 @@ Tu n'es jamais perdu : chaque leçon commence par ce que tu vas réussir et se t
 - Certificat « Python Fondamentaux » après l'examen et le projet **[À CONFIRMER : certificat à numéro vérifiable]**
 - Accès à la communauté d'entraide **[À CONFIRMER]**
 
-## Tarifs
+## Tarif
 
-| Profil | Prix |
-|---|---|
-| Particulier | 12 000 FCFA |
-| Étudiant / enseignant | 7 000 FCFA |
-| Élève | 5 000 FCFA |
-| Demandeur d'emploi | 6 000 FCFA |
-| Formateur indépendant | 9 500 FCFA |
-| Équipe (à partir de 3 personnes) | 18 000 FCFA par personne, dégressif |
-| École, université (à partir de 20 élèves) | 4 000 FCFA par élève, dégressif |
+**Pendant la période de lancement : tout est gratuit.** Lis, parcours et télécharge les documents sans rien payer.
+Ensuite, les cours deviennent premium, à un **prix unique pour tout le monde** :
 
-*(Prix de départ : à valider avant publication. Voir `docs/TARIFS.md`.)*
+| Parcours | FCFA | Euro | Dollar |
+|---|---|---|---|
+| P01 Python Fondamentaux | 2 000 | 3 € | 3,5 $ |
+
+Le module 1 reste **gratuit** pour que tu puisses toujours essayer avant d'acheter.
+
+*(Valeurs de départ : à valider avant publication. Voir `docs/TARIFS.md` et `catalogue/tarifs.toml`.)*
 
 ## Questions fréquentes
 
@@ -106,7 +105,7 @@ Tu n'es jamais perdu : chaque leçon commence par ce que tu vas réussir et se t
 **Le certificat est-il un diplôme d'État ?** Non. C'est un certificat de l'académie, qui atteste d'une formation
 et d'un projet réalisés.
 
-**Puis-je essayer avant d'acheter ?** Oui : le module 1 est gratuit.
+**Puis-je essayer avant d'acheter ?** Oui : pendant le lancement tout est gratuit, et le module 1 le reste ensuite.
 
 **Puis-je me faire rembourser ?** **[À CONFIRMER : politique de remboursement]**
 

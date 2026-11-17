@@ -68,7 +68,7 @@ addopts = "-ra -q --strict-markers"
 python_functions = "test_*"  # ne collecte pas les fonctions tests_pour_* (exercices de la leçon 10.2)
 # Par défaut on teste les SOLUTIONS (elles doivent toujours être vertes).
 # Les exercices sont lancés explicitement par l'apprenant : pytest parcours/<parcours>/exercices/test_exNN_x.py
-testpaths = ["parcours/*/solutions", "parcours/*/projets"]
+testpaths = ["parcours/*/solutions", "parcours/*/projets", "outils"]
 markers = [
     "slow: tests lents (désactivés par défaut en dev)",
     "integration: tests d'intégration nécessitant une ressource externe (DB, réseau)",

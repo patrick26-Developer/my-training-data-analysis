@@ -33,7 +33,7 @@ ignore = ["E501"]  # la longueur de ligne est gérée par le formatter
 "**/solutions/test_sol*.py" = ["I001"]  # fichiers générés par outils/sync_tests_solutions.py
 "parcours/p01_python_fondamentaux/**" = ["PTH123"]  # open() est enseigné avant pathlib
 "**/projets/**" = ["SIM110", "SIM108", "SIM103", "SIM105", "RUF007"]
-"**/exercices/**" = ["F401", "F841"]  # imports/variables inutilisés tolérés dans les squelettes d'exercices
+"**/exercices/**" = ["F401", "F841", "SIM103", "SIM110", "SIM108", "B006", "RET505"]  # imports/variables inutilisés tolérés dans les squelettes d'exercices
 
 # ---------------------------------------------------------------------------
 # Black : formatage (utilisé en complément du formatter ruff sur certains modules)
@@ -65,6 +65,7 @@ ignore_errors = true
 minversion = "8.0"
 asyncio_default_fixture_loop_scope = "function"
 addopts = "-ra -q --strict-markers"
+python_functions = "test_*"  # ne collecte pas les fonctions tests_pour_* (exercices de la leçon 10.2)
 # Par défaut on teste les SOLUTIONS (elles doivent toujours être vertes).
 # Les exercices sont lancés explicitement par l'apprenant : pytest parcours/<parcours>/exercices/test_exNN_x.py
 testpaths = ["parcours/*/solutions", "parcours/*/projets"]

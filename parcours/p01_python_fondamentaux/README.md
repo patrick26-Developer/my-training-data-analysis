@@ -19,7 +19,7 @@ et organises ton code en fonctions et modules.
 | M7 | Modules et environnement | 7.1 Importer · 7.2 Bibliothèque standard · 7.3 `venv` et `pip` · 7.4 Écrire ses modules · mini-projet boîte à outils | ✅ terminé |
 | M8 | Maths et algorithmique | 8.1 Module `math` et formules (aire, intérêts, pourcentages) · 8.2 `statistics`, `random`, `decimal`, `fractions` · 8.3 Tableaux à 2 dimensions (listes de listes, matrices) · 8.4 Algorithmes classiques (recherche, tri, suite de Fibonacci, nombres premiers) | ✅ terminé |
 | M9 | Premiers graphiques | 9.1 Dessiner avec `turtle` · 9.2 Courbes et histogrammes avec `matplotlib` · 9.3 Représenter une fonction mathématique · 9.4 Graphique des ventes d'une boutique | ✅ terminé |
-| M10 | Écrire du bon code | 10.1 Déboguer · 10.2 Premiers tests · 10.3 Style PEP 8 · 10.4 Documenter | ⏳ |
+| M10 | Écrire du bon code | 10.1 Déboguer · 10.2 Premiers tests · 10.3 Style PEP 8 · 10.4 Documenter | ✅ terminé |
 | M11 | Projets | Mini-projets de chaque module + **projet de synthèse : gestion de boutique en console** | ⏳ |
 
 ## Comment travailler une leçon

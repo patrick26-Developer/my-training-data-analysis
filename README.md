@@ -12,7 +12,7 @@ Organisation inspirée du système **LMD** (Licence – Master – Doctorat).
 |---|---|
 | P01 Python Fondamentaux | ✅ complet (11 modules, 39 leçons, projet de synthèse, examen final) |
 | P02 POO et conception | ✅ contenu livré : [6 modules, exercices, boutique et examen](parcours/p02_poo_et_conception/README.md) |
-| P03 Python Avancé | 🟡 1 leçon disponible (sera complété après P01 et P02) |
+| P03 Python Avancé | 🟡 en cours : [2 leçons disponibles](parcours/p03_python_avance/README.md) |
 | Autres parcours | ⏳ planifiés, voir [`docs/CURSUS.md`](docs/CURSUS.md) |
 
 Principe : **un parcours est terminé complètement avant d'ouvrir le suivant.**

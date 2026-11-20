@@ -19,6 +19,21 @@ Principe : **un parcours est terminé complètement avant d'ouvrir le suivant.**
 
 ## Documentation
 
+La première version web couvre le parcours P01. Les leçons sont générées depuis les
+fichiers Markdown et l’atelier exécute Python dans le navigateur avec Pyodide.
+
+Pour générer et ouvrir la version locale depuis la racine du dépôt :
+
+```powershell
+python -m pip install -r site/requirements.txt
+python site/build.py
+python -m http.server 8000 --directory dist
+```
+
+Ouvre `http://localhost:8000/`. Sur Render, importe `render.yaml` comme Blueprint
+ou crée un **Static Site** sur `main` avec la commande de build
+`pip install -r site/requirements.txt && python site/build.py` et publie `dist`.
+
 - [`docs/CURSUS.md`](docs/CURSUS.md) — les 12 parcours, le LMD, les crédits et les certificats
 - [`docs/MODELE_DE_LECON.md`](docs/MODELE_DE_LECON.md) — la structure commune à toutes les leçons
 - [`docs/PLATEFORME.md`](docs/PLATEFORME.md) — architecture du futur site web et feuille de route
@@ -81,6 +96,6 @@ Le typage strict porte sur le code typé publié, pas sur les squelettes incompl
 `mypy parcours/p03_python_avance/solutions/sol01_typing_et_structures_de_donnees.py`.
 P01 et P02 sont exclus de mypy : les annotations avancées sont enseignées en P03.
 
-P01 et P02 sont validés techniquement ; relecture humaine et essais avec de vrais
-débutants restent à réaliser. Les certificats sont pour l'instant des règles de
-validation : le site, les comptes et le paiement sont à construire.
+P01 et P02 sont validés techniquement. La relecture humaine et les essais avec de
+vrais débutants restent à réaliser. Les comptes, les certificats vérifiables et
+le paiement restent à construire.

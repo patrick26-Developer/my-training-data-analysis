@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>$title · Mayele Python Académie</title>
+  <link rel="stylesheet" href="/style.css">
+  <script src="/atelier.js" type="module"></script>
+</head>
+<body class="$layout">
+  <a class="skip" href="#contenu">Aller au contenu</a>
+  <header class="top">
+    <a class="brand" href="/"><span aria-hidden="true">&gt;_</span> Mayele Python Académie</a>
+    <button type="button" data-open>Atelier Python</button>
+  </header>
+  <div class="layout">
+    <aside><nav aria-label="Programme"><a href="/">Python Fondamentaux</a>$modules</nav></aside>
+    <main id="contenu" tabindex="-1">$content$navigation</main>
+  </div>
+  <dialog aria-labelledby="atelier-titre">
+    <div class="dialog-top">
+      <h2 id="atelier-titre">Atelier Python</h2>
+      <form method="dialog"><button>Fermer</button></form>
+    </div>
+    <p>Les exemples qui utilisent une interface graphique ou des fichiers du projet se travaillent en local.</p>
+    <label for="code">Code Python</label>
+    <textarea id="code" spellcheck="false">print("Mbote, Python !")</textarea>
+    <label for="inputs">Réponses à input() (une par ligne)</label>
+    <textarea id="inputs" rows="2"></textarea>
+    <div class="actions">
+      <button type="button" id="run">Exécuter</button>
+      <button type="button" id="stop" disabled>Arrêter</button>
+    </div>
+    <p id="status" role="status"></p>
+    <h3>Sortie</h3>
+    <pre id="output" tabindex="0"></pre>
+  </dialog>
+</body>
+</html>

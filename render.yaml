@@ -1,0 +1,7 @@
+services:
+  - type: web
+    runtime: static
+    name: mayele-python-academie
+    branch: main
+    buildCommand: pip install -r site/requirements.txt && python site/build.py
+    staticPublishPath: ./dist

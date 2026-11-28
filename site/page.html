@@ -11,10 +11,19 @@
   <a class="skip" href="#contenu">Aller au contenu</a>
   <header class="top">
     <a class="brand" href="/"><span aria-hidden="true">&gt;_</span> Mayele Python Académie</a>
-    <button type="button" data-open>Atelier Python</button>
+    <nav class="top-nav" aria-label="Navigation principale">
+      <a href="/#parcours">Parcours</a>
+      <button class="studio-link" type="button" data-open>Atelier Python</button>
+    </nav>
   </header>
   <div class="layout">
-    <aside><nav aria-label="Programme"><a href="/">Python Fondamentaux</a>$modules</nav></aside>
+    <aside class="sidebar">
+      <details class="course-menu" open>
+        <summary>Programme du cours</summary>
+        <nav aria-label="Programme">$modules</nav>
+      </details>
+    </aside>
+    $outline
     <main id="contenu" tabindex="-1">$content$navigation</main>
   </div>
   <dialog aria-labelledby="atelier-titre">

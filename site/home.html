@@ -1,0 +1,41 @@
+<script src="/catalogue.js" type="module"></script>
+<section class="hero">
+  <div class="hero-copy">
+    <p class="eyebrow">L’académie Python francophone</p>
+    <h1>Apprends Python.<br><em>Construis la suite.</em></h1>
+    <p>Du premier programme à la data, au web et à l’IA. Avance à ton rythme avec des leçons, des exercices et des projets concrets.</p>
+    <div class="actions">
+      <a href="$first_lesson">Commencer avec Python <span aria-hidden="true">→</span></a>
+      <a class="secondary" href="#parcours">Explorer les parcours</a>
+    </div>
+  </div>
+  <div class="hero-example example">
+    <div class="file-label"><span class="file-icon" aria-hidden="true">⌘</span> premiers_pas.py</div>
+    <pre><code><span class="syntax-comment"># Mon premier programme</span>
+<span class="syntax-function">print</span>(<span class="syntax-string">"Mbote, Python !"</span>)</code></pre>
+    <div class="studio-action"><button type="button"><span aria-hidden="true">▶</span> Essayer dans l’atelier</button></div>
+    <div class="studio-output"><span>Sortie attendue</span><samp>Mbote, Python !</samp></div>
+  </div>
+</section>
+<section id="parcours" class="catalogue">
+  <h2>Tous les parcours</h2>
+  <p>Explore les 12 parcours et vois lesquels tu peux commencer dès maintenant.</p>
+  <form class="course-filters" role="search" aria-label="Filtrer les parcours" hidden>
+    <label>Rechercher un parcours<input type="search" name="query" placeholder="Ex. Python, data, P06"></label>
+    <label>Disponibilité
+      <select name="status">
+        <option value="">Tous les statuts</option>
+        <option value="online">Disponible en ligne</option>
+        <option value="in-progress">En cours</option>
+        <option value="planned">Planifié</option>
+      </select>
+    </label>
+  </form>
+  <p class="filter-result" role="status" hidden></p>
+  <div class="course-grid">$cards</div>
+</section>
+<section id="programme" class="curriculum">
+  <h2>Programme de Python Fondamentaux</h2>
+  <p>Les 11 modules du parcours P01, du premier programme au projet de synthèse et à l’examen final.</p>
+  <div class="module-grid">$modules</div>
+</section>

@@ -8,6 +8,20 @@ const output = document.querySelector("#output");
 let worker;
 let timer;
 
+const mobile = matchMedia("(max-width: 49rem)");
+const compactOutline = matchMedia("(max-width: 68rem)");
+const courseMenu = document.querySelector(".course-menu");
+const outlineMenu = document.querySelector(".outline details");
+
+function updateMenus() {
+  courseMenu.open = !mobile.matches;
+  if (outlineMenu) outlineMenu.open = !compactOutline.matches;
+}
+
+updateMenus();
+mobile.addEventListener("change", updateMenus);
+compactOutline.addEventListener("change", updateMenus);
+
 document.querySelector("[data-open]").addEventListener("click", () => dialog.showModal());
 document.querySelectorAll(".example button").forEach((button) => {
   button.addEventListener("click", () => {
